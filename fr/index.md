@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 lang: fr
 
 h1: Bienvenue

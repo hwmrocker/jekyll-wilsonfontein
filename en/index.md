@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: home
 lang: en
 
 h1: Welcome
 title: Welcome to Wilsonfontein Hunting Farm
 ---
 
-P[198]
+<!-- P[198] -->
 
 Since 1938 Wilsonfontein is in the possession of our family. There are 28 858 ha of unique and picturesque landscape that you can visit, of course, free of malaria. We often get the compliment, Wilsonfontein is the most beautiful farm in Namibia.
 
