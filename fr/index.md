@@ -1,6 +1,9 @@
 ---
 layout: default
 lang: fr
+
+h1: Bienvenue
+title: Bienvenue à Wilsonfontein Hunting Farm
 ---
 
 Le territoire de Wilsonfontein est la propriété de notre famille depuis 1938. Il couvre 28858 ha de reliefs uniques et de paysages somptueux, qui vous sont accessibles sans le moindre risque de malaria. De nombreux visiteurs nous ont confié que selon eux Wilsonfontein est le plus beau territoire de Namibie.
