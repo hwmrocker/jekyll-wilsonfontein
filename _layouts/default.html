@@ -112,7 +112,7 @@ langs: ['en', 'de', 'fr']
             <!-- Example row of columns -->
             <div class="row">
                 {% include lang-changer.html %}
-                {{ content }}
+                {{ content | markdownify }}
             </div>
 
             <hr>
