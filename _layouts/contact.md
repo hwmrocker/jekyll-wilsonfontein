@@ -75,7 +75,7 @@ Fasanstr. 18 <br>
 
 Fax: +49 (0) 8636 - 98 60 31
 
-{{page.trans.cell[page.lang]}}: +49 (0) 176 -38 80 30 80
+{{page.trans.cell[page.lang]}}: +49 (0) 176 - 38 80 30 80
 
 
 

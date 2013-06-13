@@ -4,16 +4,6 @@ lang: de
 
 h1: Wilkommen
 title: Wilsonfontein Jagd Farm
-
-tml: |
-    aasdf
-    asfd
-
-
-
-    asdf
-    asdf
-    asdf
 ---
 
 Wilsonfontein ist seit 1938 im Besitz unserer Familie. Es sind 28858 ha einmalige und malerische Landschaft die Sie besuchen können, natürlich frei von Malaria. Wir bekommen oft das Kompliment, Wilsonfontein sei die schönste Farm in Namibia.
