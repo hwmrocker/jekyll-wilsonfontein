@@ -6,7 +6,7 @@ h1: Jagd
 title: Jagen in Afrika auf der Wilsonfontein Jagd Farm
 ---
 
-P[302]
+<!-- P[302] -->
 
 Bekannt ist Wilsonfontein wegen seiner großen Springböcke. Der Trophäendurchschnitt liegt bei 39 cm Hornlänge und 16 cm Umfang (39/16) Exemplare von (45/15)cm (17.7/5.9)Zoll wurden auch schon erlegt. Es gibt auch alte Böcke mit abgearbeiteten und abgebrochenen Hörnern.
 
@@ -21,4 +21,4 @@ ALLE Tiere die gejagt werden können, sind fett dargestellt.
 
 Bei uns auf der Farm gehört dem Wild das Land. Wir halten **keine** Nutztiere, damit das Wild ungestört in seiner natürlichen Umgebung leben kann. **Es ist keine Gatterjagd**. 
 
-A[Jagen][thumb,num=21]
+<!-- A[Jagen][thumb,num=21] -->
