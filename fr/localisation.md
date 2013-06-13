@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: location
 lang: fr
 
 h1: Localisation

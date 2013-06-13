@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hunting
 lang: de
 
 h1: Jagd

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hunting
 lang: en
 
 h1: Hunting
