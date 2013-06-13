@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: price
 lang: de
 
 h1: Preise

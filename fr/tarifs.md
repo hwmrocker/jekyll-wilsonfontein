@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: price
 lang: fr
 
 h1: Tarifs

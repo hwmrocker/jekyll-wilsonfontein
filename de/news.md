@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: news
 lang: de
 
 h1: Aktuelles

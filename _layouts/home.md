@@ -14,6 +14,3 @@ links:
 ---
 
 {{ content }}
-
-
-{{page.tml | markdownify}}

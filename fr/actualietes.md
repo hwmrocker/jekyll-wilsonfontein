@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: news
 lang: fr
 
 h1: Actualités
