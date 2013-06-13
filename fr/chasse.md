@@ -6,7 +6,7 @@ h1: Chasse
 title: Chasse
 ---
 
-P[302]
+<!-- P[302] -->
 
 Wilsonfontein est réputé pour la taille des cornes de ses springbocks. La moyenne se situe à 39 cm de hauteur pour une envergure de 16 cm (39/16), mais des animaux affichant (45/15) cm càd (17.7/5.9) pouces ont aussi déjà été prélevés. Bien entendu, il arrive aussi de rencontrer des très vieux mâles aux cornes complètement usées ou cassées.
 

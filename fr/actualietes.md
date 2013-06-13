@@ -48,4 +48,4 @@ PS.: Ce serait génial de pouvoir insérer ici votre photo à côté de l’entr
 
 Mais où se trouve donc à peu près l’entrée du passage du diable?
 ---
-P[131,314]
+<!-- P[131,314] -->

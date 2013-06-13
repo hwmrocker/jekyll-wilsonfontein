@@ -31,4 +31,4 @@ If You rediscover the gorge twice, you qualify for both prices.
 PS. Wouldn't it be nice to eternalise yourself as rediscoverer here with a picture of the gorge. 
 
 Where is the Devilsgorge more or less?
-P[131,314]
+<!-- P[131,314] -->
