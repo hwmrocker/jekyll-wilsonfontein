@@ -25,13 +25,13 @@ for pid, data in o["pics"].iteritems():
     
     stags = set(data["tags"])
     hiddentags = set(data["hiddentags"])
-    for tag in data["tags"]:
-        if "bei" in tag:
-            stags.remove(tag)
-            hiddentags.add(tag)
-            stags.add(tag.replace("bei ",""))
+    # for tag in data["tags"]:
+    #     if "bei" in tag:
+    #         stags.remove(tag)
+    #         hiddentags.add(tag)
+    #         stags.add(tag.replace("bei ",""))
 
-    o["pics"][pid]["tags"] = sorted(list(stags))
+    o["pics"][pid]["tags"] = sorted(list(s.title() for s in stags))
     o["pics"][pid]["hiddentags"] = sorted(list(hiddentags))
 with codecs.open(OUT, 'w', encoding="utf-8") as outfh:
     outfh.write("---\n")
