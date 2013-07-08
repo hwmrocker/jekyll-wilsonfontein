@@ -1,5 +1,6 @@
 import yaml
 import codecs
+from datetime import datetime, timedelta
 
 IN = '2013-03-05-photos.md'
 OUT = IN + '.new'
@@ -7,7 +8,28 @@ OUT = IN + '.new'
 yaml_context = []
 end = []
 
+def writeit(pic,date,tags):
+    d = {
+        'de':'de/fotos/',
+        'en':'en/photos',
+        'fr':'fr/photos'
+    }
+
+    for lang, folder in d.iteritems():
+        nd = {
+            'lang':lang,
+            'layout':'photo',
+            'picname':pic,
+            'categories':folder.split(','),
+            'tags':tags[:]
+        }
+        with codecs.open(folder+'/'+"%s-%s.md" % (date.strftime("%Y-%m-%d"),pic), 'w', encoding="utf-8") as outfh:
+            outfh.write("---\n")
+            outfh.write(yaml.safe_dump(nd))
+            outfh.write("---\n")
+
 yaml_context_idx = 0
+date = datetime.strptime("2010-07-07","%Y-%m-%d")
 for line in codecs.open(IN, encoding="utf-8"):
     if line == "---\n":
         yaml_context_idx += 1
@@ -21,23 +43,26 @@ for line in codecs.open(IN, encoding="utf-8"):
 o = yaml.load("\n".join(yaml_context))
 
 
-for pid, data in o["pics"].iteritems():
-    
+# for pid, data in o["pics"].iteritems():
+for pid in sorted(o["pics"].keys()):
+    data =  o["pics"][pid]
     stags = set(data["tags"])
     hiddentags = set(data["hiddentags"])
+    writeit(pid, date, data["tags"])
+    date += timedelta(days=1)
     # for tag in data["tags"]:
     #     if "bei" in tag:
     #         stags.remove(tag)
     #         hiddentags.add(tag)
     #         stags.add(tag.replace("bei ",""))
 
-    o["pics"][pid]["tags"] = sorted(list(s.title() for s in stags))
-    o["pics"][pid]["hiddentags"] = sorted(list(hiddentags))
-with codecs.open(OUT, 'w', encoding="utf-8") as outfh:
-    outfh.write("---\n")
-    outfh.write(yaml.safe_dump(o))
-    outfh.write("---\n")
-    outfh.write("".join(end))
+    # o["pics"][pid]["tags"] = sorted(list(s.title() for s in stags))
+    # o["pics"][pid]["hiddentags"] = sorted(list(hiddentags))
+# with codecs.open(OUT, 'w', encoding="utf-8") as outfh:
+#     outfh.write("---\n")
+#     outfh.write(yaml.safe_dump(o))
+#     outfh.write("---\n")
+#     outfh.write("".join(end))
 
 # o = yaml.load(open("in.yml"))
 

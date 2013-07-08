@@ -4,7 +4,6 @@ layout: default
 {% assign o = site.tags.hideme[0] %}
 
 {%assign pic = o.pics[page.picname]%}
-{%assign page.title = "foo"%}
 
 
 ({{pic}})
@@ -18,3 +17,21 @@ layout: default
 {% endfor %}
 
 {{ content }}
+
+<div id="page-navigation"> 
+        <div class="clear">&nbsp;</div> 
+        <div class="left"> 
+        {% if page.previous.url %} 
+                <a href="{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+        {% endif %} 
+        </div> 
+
+        <div class="right"> 
+        {% if page.next.url %} 
+                <a href="{{page.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a> 
+        {% endif %} 
+        </div> 
+        <div class="clear">&nbsp;</div> 
+</div>
