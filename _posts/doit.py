@@ -49,20 +49,28 @@ catlang = {
         "de":u"fotofalle",
         "en":u"spycam",
         "fr":u"spycam"
-    } 
+    },
+    "none":{
+        "de":"",
+        "en":"",
+        "fr":""
+    }
 }
 def _write_it(pic,date,tags,cats):
-
+    import os
     for lang, folder in lang2folders.iteritems():
-        for cat in cats:
+        for cat in cats + ['none']:
             nd = {
                 'lang':lang,
                 'layout':'photo',
                 'picname':pic,
-                'categories':folder.split(',')+[cat],
+                'categories':folder.split(',')+[catlang[cat][lang]],
                 'tags':tags[:]
             }
-            with codecs.open(folder+'/'+"%s-%s.md" % (date.strftime("%Y-%m-%d"),pic), 'w', encoding="utf-8") as outfh:
+
+            _folder = "%s/%s" %(folder, "%s/"%cat if cat != "none" else "")
+            os.system("mkdir -p %s" %_folder)
+            with codecs.open(_folder+'/'+"%s-%s.md" % (date.strftime("%Y-%m-%d"),pic), 'w', encoding="utf-8") as outfh:
                 outfh.write("---\n")
                 outfh.write(yaml.safe_dump(nd))
                 outfh.write("---\n")
@@ -86,7 +94,7 @@ def writeIt(o=o):
     for pid in sorted(o["pics"].keys()):
         data =  o["pics"][pid]
         hiddentags = set(data["hiddentags"])
-        _write_it(pid, date, data["tags"])
+        _write_it(pid, date, data["tags"], data.get("categories",[]))
         date += timedelta(days=1)
 
 def cleanIt():
@@ -170,15 +178,15 @@ def addCategory(cat, titles, o=o):
 # 	fh.write(yaml.safe_dump(o))
 # with codecs.open("taglist.txt","w", encoding="utf-8") as fh:
 # 	fh.write(u"\n".join(sorted(map(unicode, tags), key=unicode.lower)))
+def foo():
+    import re
 
-import re
+    titles = re.compile(r'"title": "([^"]+)"')
 
-titles = re.compile(r'"title": "([^"]+)"')
+    for x in ("action", "animals", "hunting", "landscape", "plants", "recreation", "spycam"):
+        with open("done/%s.jl"%x) as fh:
+            txt = fh.read()
+            tits = titles.findall(txt)
+            addCategory(x,tits)
 
-for x in ("action", "animals", "hunting", "landscape", "plants", "recreation", "spycam"):
-    with open("done/%s.jl"%x) as fh:
-        txt = fh.read()
-        tits = titles.findall(txt)
-        addCategory(x,tits)
-
-saveIt()
+    saveIt()
