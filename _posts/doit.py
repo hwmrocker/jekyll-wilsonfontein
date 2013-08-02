@@ -8,6 +8,18 @@ OUT = IN + '.new'
 
 yaml_context = []
 end = []
+yaml_context_idx = 0
+for line in codecs.open(IN, encoding="utf-8"):
+    if line == "---\n":
+        yaml_context_idx += 1
+        # outfh.write(line)
+        continue
+    if yaml_context_idx == 1:
+        yaml_context.append(line)
+    elif yaml_context_idx > 1:
+        end.append(line)
+
+o = yaml.load("\n".join(yaml_context))
 
 lang2folders = {
     'de':'de/fotos/',
@@ -74,19 +86,6 @@ def _write_it(pic,date,tags,cats):
                 outfh.write("---\n")
                 outfh.write(yaml.safe_dump(nd))
                 outfh.write("---\n")
-
-yaml_context_idx = 0
-for line in codecs.open(IN, encoding="utf-8"):
-    if line == "---\n":
-        yaml_context_idx += 1
-        # outfh.write(line)
-        continue
-    if yaml_context_idx == 1:
-        yaml_context.append(line)
-    elif yaml_context_idx > 1:
-        end.append(line)
-
-o = yaml.load("\n".join(yaml_context))
 
 
 def writeIt(o=o):
