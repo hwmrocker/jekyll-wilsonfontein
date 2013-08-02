@@ -2,6 +2,7 @@
 import yaml
 import codecs
 from datetime import datetime, timedelta
+import os
 
 IN = '2013-03-05-photos.md'
 OUT = IN + '.new'
@@ -22,7 +23,7 @@ for line in codecs.open(IN, encoding="utf-8"):
 o = yaml.load("\n".join(yaml_context))
 
 lang2folders = {
-    'de':'de/fotos/',
+    'de':'de/fotos',
     'en':'en/photos',
     'fr':'fr/photos'
 }
@@ -55,7 +56,8 @@ catlang = {
     "recreation":{
         "de":u"erholung",
         "en":u"recreation",
-        "fr":u"récréation"
+        "fr":u"recreation",
+        # "fr":u"récréation"
     },
     "spycam":{
         "de":u"fotofalle",
@@ -69,7 +71,6 @@ catlang = {
     }
 }
 def _write_it(pic,date,tags,cats):
-    import os
     for lang, folder in lang2folders.iteritems():
         for cat in cats + ['none']:
             nd = {
@@ -82,10 +83,18 @@ def _write_it(pic,date,tags,cats):
 
             _folder = "%s/%s" %(folder, "%s/"%cat if cat != "none" else "")
             os.system("mkdir -p %s" %_folder)
-            with codecs.open(_folder+'/'+"%s-%s.md" % (date.strftime("%Y-%m-%d"),pic), 'w', encoding="utf-8") as outfh:
+            with codecs.open(_folder+'/'+"%s-%s%s.md" % (date.strftime("%Y-%m-%d"),("%s-"%cat) if cat != "none" else "",pic), 'w', encoding="utf-8") as outfh:
                 outfh.write("---\n")
                 outfh.write(yaml.safe_dump(nd))
                 outfh.write("---\n")
+
+
+def update(o=o):
+    date = datetime.strptime("2010-07-07","%Y-%m-%d")
+    for pid in sorted(o["pics"].keys()):
+        o["pics"][pid]["pid"]=pid
+        o["pics"][pid]["date"]=date.strftime("%Y-%m-%d")
+        date += timedelta(days=1)
 
 
 def writeIt(o=o):
@@ -95,6 +104,43 @@ def writeIt(o=o):
         hiddentags = set(data["hiddentags"])
         _write_it(pid, date, data["tags"], data.get("categories",[]))
         date += timedelta(days=1)
+
+def genfn(pic, cat=None):
+    if cat == "none": cat = None
+    return "%s-%s%s" % (pic["date"],("%s-"%cat) if cat is not None else "",pic["pid"])
+def genlnk(pic, cat=None, folder=None):
+    if cat in (None, "none"):
+        return "/%s/%s.html"%(folder,pic["pid"])
+    return "/%s/%s/%s%s.html"%(folder,cat,("%s-"%cat) if cat is not None else "",pic["pid"])
+def writeIt2(o=o):
+    for cat in catlang.keys():
+        if cat == "none": cat = None
+        catlist=[p for p in o["pics"].itervalues() if (cat in p.get("categories",[]) or cat is None)]
+        for idx, pic in enumerate(catlist):
+            prev = catlist[idx-1] if idx > 0 else None
+            next = catlist[idx+1] if (idx+1) < len(catlist) else None
+            _write_it2(pic, cat, next, prev)
+
+def _write_it2(pic, cat=None, next=None, prev=None):
+    if cat is None: cat = "none"
+    for lang, folder in lang2folders.iteritems():
+        nd = {
+            'lang':lang,
+            'layout':'photo',
+            'picname':pic["pid"],
+            'categories':folder.split('/')+[catlang[cat][lang]],
+            'tags':pic["tags"][:],
+            'next_photo':genlnk(next,cat,folder) if next is not None else None,
+            'prev_photo':genlnk(prev,cat,folder) if prev is not None else None
+        }
+
+        _folder = "%s/%s" %(folder, "%s/"%cat if cat != "none" else "")
+        os.system("mkdir -p %s" %_folder)
+        with codecs.open(_folder+'/%s.md'%genfn(pic, cat), 'w', encoding="utf-8") as outfh:
+            outfh.write("---\n")
+            outfh.write(yaml.safe_dump(nd))
+            outfh.write("---\n")
+
 
 def cleanIt():
     import os
@@ -189,3 +235,8 @@ def foo():
             addCategory(x,tits)
 
     saveIt()
+
+# writeIt()
+# writeIt2()
+# update()
+# saveIt()
