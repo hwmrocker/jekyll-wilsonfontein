@@ -33,7 +33,7 @@ hio
 
 {%% for post in site.posts %%}
     {%% assign category_size = post.categories | size %%}
-    {%% if post.categories contains '%(lang)s' and post.categories contains '%(photo_trans)s' %(extra_cat)s and category_size == 3 %%}{%% include photo_thumb.hmtl post=post %%}{%% endif %%}
+    {%% if post.categories contains '%(lang)s' and post.categories contains '%(photo_trans)s' %(extra_cat)s and category_size == 3 %%}{%% include photo_thumb.html post=post %%}{%% endif %%}
 {%% endfor %%}"""
 
 extra_cat_templ = "and post.categories contains '%(cat)s'"
