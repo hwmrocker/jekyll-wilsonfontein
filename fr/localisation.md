@@ -13,7 +13,7 @@ La Namibie se trouve dans le sud du continent africain. Elle est bordée au nord
 
 
 Comment vous rendre chez nous
---------------------------------------
+-----------------------------
 
 A partir de Windhoek suivez la route B1 jusqu’à Okahandja, puis la B2 Wilhelmstal jusqu‘à Karibib (180 km de route goudronée) puis 76 Km vers le sud sur la C32 (piste), et enfin 10 Km sur la P1978 jusqu’au lodge.
 
@@ -25,11 +25,11 @@ Une alternative à partir de Windhuk consiste à venir par Khomas Hochland en pa
 
 Nous pouvons bien entendu vous récupérer à l’aéroport sur simple demande (voir tarifs)
 
-[voir la carte topographique][topomap] (743 kB)
+[Link at Googlemaps][googlemap]
 
 
 Conseils pour les automobilistes en Namibie
---------------------------------------
+-------------------------------------------
 
 Veillez à rouler doucement lorsque vous empruntez une piste, car les voitures dérapent très facilement dans les virages. Lorsqu’un autre véhicule apparaît en face de vous réjouissez-vous de ne pas être seuls, allumez vos feux de croisement, ralentissez et faites attention aux projections de pierres. Attention, en Namibie la conduite se fait à gauche.
 
@@ -38,4 +38,5 @@ En cas d’enlisement dans du sable, dégagez le sable devant les roues, dégonf
 
 
 
-[topomap]: http://wilsonfontein.de/de/topomap.htm "Carte topographique"
+[googlemap]: http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=wilsonfontein+namibia&ie=UTF8&hq=wilsonfontein+namibia&hnear=&ll=-22.667383,15.711651&spn=0.011682,0.01929&z=16 "Google Maps Link"
+

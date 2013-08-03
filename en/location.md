@@ -23,10 +23,7 @@ Alternatively you can drive from Windhoek through the Khomas Hochland passing th
 Upon request, I'll pick you up from the airport. (See price list)
 
 
-[To the topographic map] [topomap] (743 kB)
-
-
-
+[Link at Googlemaps][googlemap]
 
 
 Tips for Self-Driver in Namibia
@@ -35,4 +32,4 @@ Tips for Self-Driver in Namibia
 
 If you get ever stuck in the thick sand, dig away the sand with your hand in front of the tires, let some air out of the tire, and drive slowly with slipping clutch. Do not forget the to pump the tires again immediately after so that the tire will not be damaged.
 
-[Topomap]: http://wilsonfontein.de/de/topomap.htm "Topographic Map"
+[googlemap]: http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=wilsonfontein+namibia&ie=UTF8&hq=wilsonfontein+namibia&hnear=&ll=-22.667383,15.711651&spn=0.011682,0.01929&z=16 "Google Maps Link"

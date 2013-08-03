@@ -23,7 +23,6 @@ Als Alternative geht es auch aus Windhuk übers Khomas Hochland am Daan Viljoen 
 Auf Wunsch hole ich Sie vom Flugplatz ab. (Siehe Preisliste)
 
 
-[zur topographischen Karte][topomap]
 [Link bei Googlemaps][googlemap]
 
 
@@ -33,5 +32,4 @@ Tipps für Selbstfahrer in Namibia
 
 Wenn Sie jemals auf der Pad im dicken Sand stecken bleiben graben Sie mit der Hand den Sand vor dem Reifen weg, lassen Sie etwas Luft aus dem Reifen, und fahren Sie mit rutschender Kupplung langsam an. Nicht vergessen die Reifen sofort danach wieder auf zu pumpen, damit der Reifen nicht beschädigt wird.
 
-[topomap]: http://wilsonfontein.de/de/topomap.htm "Topografische Karte"
 [googlemap]: http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=wilsonfontein+namibia&ie=UTF8&hq=wilsonfontein+namibia&hnear=&ll=-22.667383,15.711651&spn=0.011682,0.01929&z=16 "Google Maps Link"

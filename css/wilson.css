@@ -11,5 +11,51 @@
 body {
   position: relative; /* For scrollyspy */
   padding-top: 50px; /* Account for fixed navbar */
+  color: #333;
+  background: #d0c4b6 url('/img/pics/noise.png');
 }
 
+h1.big {
+    font-size: 45px;
+    text-indent: 20px;
+    border-bottom: 1px dotted;
+    margin-bottom: 30px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption {
+    background-color: #fff;
+    float: none;
+    clear: both;
+    padding: 7px;
+    border-radius: 4px;
+    top: -10px;
+    text-align: center;
+}
+
+.caption span.photographer {
+    font-style: italic;
+}
+
+.caption span.title {
+    font-weight:bold;
+}
+
+.dedication {
+    text-align: center;
+}
+
+.dedication .img-thumbnail {
+    background-color: #000;
+    border: 1px solid #666666;
+}
+
+.dedication .caption {
+    background-color: #000;
+    border: 1px solid #666666;
+}
