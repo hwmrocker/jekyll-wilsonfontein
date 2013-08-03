@@ -1,6 +1,8 @@
 ---
 layout: default
 
+navname: dedication
+
 links:
     de:
         url: /de/widmung.html
@@ -30,19 +32,18 @@ trans:
         fr: et à mon frère Udo qui a vécu ces 20 dernières années sur la propriété
 
 ---
+<div class="dedication">
+{% include image.html param='P0000289' %}
 
-{{page.trans.ab1[page.lang]}}
-<!-- P[303][class=trauer] -->
-<br><br>
+{{ page.trans.ab1[page.lang] | markdownify }}
 
-{{page.trans.ab2[page.lang]}}
+{% include image.html param='P0000290' %}
 
-<!-- P[304][class=trauer] -->
+{{ page.trans.ab2[page.lang] | markdownify }}
 
-<br><br>
-<!-- P[305][class=trauer] -->
-<br><br>
-<!-- P[306][class=trauer] -->
-
-
+{% include image.html param='P0000291' %}
+{% include image.html param='P0000292' %}
 {{ content }}
+</div>
+
+

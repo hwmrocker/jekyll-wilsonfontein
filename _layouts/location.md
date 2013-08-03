@@ -1,6 +1,8 @@
 ---
 layout: default
 
+navname: location
+
 links:
     de:
         url: /de/lage.html

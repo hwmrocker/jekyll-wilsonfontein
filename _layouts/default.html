@@ -1,4 +1,98 @@
+---
+langs: ['en', 'de', 'fr']
+navbar:
+  home:
+    de:
+        url: /de/index.html
+        name: Home
+    en:
+        url: /en/index.html
+        name: Home
+    fr:
+        url: /fr/index.html
+        name: Home
+  location:
+    de:
+        url: /de/lage.html
+        name: Lage
+    en:
+        url: /en/location.html
+        name: Location
+    fr:
+        url: /fr/localisation.html
+        name: Localisation
+  hunting:
+    de:
+        url: /de/jagd.html
+        name: Jagd
+    en:
+        url: /en/hunting.html
+        name: Hunting
+    fr:
+        url: /fr/chasse.html
+        name: Chasse
+  recreation:
+    de:
+        url: /de/erholung.html
+        name: Erholung
+    en:
+        url: /en/recreation.html
+        name: Recreation
+    fr:
+        url: /fr/detente.html
+        name: Détente
+  photos:
+    de:
+        url: /de/fotos/
+        name: Fotos
+    en:
+        url: /en/photos/
+        name: Photos
+    fr:
+        url: /fr/photos/
+        name: Photos
+  price:
+    de:
+        url: /de/preise.html
+        name: Preise
+    en:
+        url: /en/price.html
+        name: Price
+    fr:
+        url: /fr/tarifs.html
+        name: Tarifs
+  contact:
+    de:
+        url: /de/kontakt.html
+        name: Kontakt
+    en:
+        url: /en/contact.html
+        name: Contact
+    fr:
+        url: /fr/contact.html
+        name: Contact
+  dedication:
+    de:
+        url: /de/widmung.html
+        name: Widmung
+    en:
+        url: /en/dedication.html
+        name: Dedication
+    fr:
+        url: /fr/hommage.html
+        name: Hommage
+  imprint:
+    de:
+        url: /de/impressum.html
+        name: Impressum
+    en: 
+        url: /en/imprint.html
+        name: Imprint
+    fr:
+        url: /fr/imprint.html
+        name: Imprint
 
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,80 +145,39 @@
 
     <!-- Docs master nav -->
     <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
-  <div class="container">
-    <a href="./" class="navbar-brand">Bootstrap 3 RC1</a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-    </button>
-    <div class="nav-collapse collapse bs-navbar-collapse">
-      <ul class="nav navbar-nav">
-        {% if page.lang == 'de' %}
-          <li class="active"><a href="/de/">Home</a></li>
-          <li><a href="/de/lage.html">Lage</a></li>
-          <li><a href="/de/jagd.html">Jagd</a></li>
-          <li><a href="/de/erholung.html">Erholung</a></li>
-          <li><a href="/de/fotos.html">Fotos</a></li>
-          <li><a href="/de/preis.html">Preis</a></li>
-          <li><a href="/de/kontakt.html">Kontakt</a></li>
-          <li><a href="/de/widmung.html">Widmung</a></li>
-          <li><a href="/de/impressum.html">Impressum</a></li>
-        {% endif %}
-        {% if page.lang == 'en' %}
-          <li class="active"><a href="/">Home</a></li>
-
-          <li><a href="/geschenke.html">Gifts</a></li>
-          <li><a href="/rahmenprogramm.html">Programm</a></li>
-          <li><a href="/schlafplatz.html">Foo</a></li>
-          <li><a href="/disqus.html">Bar</a></li> <!-- -->
-          <li><a href="/impressum.html">Impressum</a></li>
-        {% endif %}
-        {% if page.lang == 'fr' %}
-          <li class="active"><a href="/">Home</a></li>
-
-          <li><a href="/geschenke.html">Gifts</a></li>
-          <li><a href="/rahmenprogramm.html">Programm</a></li>
-          <li><a href="/schlafplatz.html">Foo</a></li>
-          <li><a href="/disqus.html">Bar</a></li> <!-- -->
-          <li><a href="/impressum.html">Impressum</a></li>
-        {% endif %}
-      </ul>
+      <div class="container">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        </button>
+        <div class="nav-collapse collapse bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            {% for navitem in page.navbar %}
+              <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <ul class="nav navbar-nav ">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{page.lang}} <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              {% for lang in page.langs %}
+               <li><a href="{{ site.url }}{{ page.navbar[page.navname][lang].url }}">{{ lang }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
-
 
     <!-- Page content of course! -->
-    <div class="bs-masthead">
-  <div class="container">
-    <h1>{{ page.h1 }}</h1>
-    <p class="lead">{{page.p1}}</p>
-  </div>
-</div>
-
     <div class="row">
-      {% include lang-changer.html %}
-      {{ content | markdownify }}
+        <div class="col-12 col-lg-9 col-offset-1">
+          <h1 class="big">{{ page.h1 }}<small>{{page.p1}}</small></h1>
+          {{ content | markdownify }}
+          <footer>
+            <p class="pull-right">&copy; Olaf 2013</p>
+          </footer>
+        </div>
     </div>
-
-    <div class="container">
-      <ul class="bs-masthead-links">
-        <li>
-          <a href="https://github.com/twbs/bootstrap">GitHub project</a>
-        </li>
-        <li>
-          <a href="http://examples.getbootstrap.com">Examples</a>
-        </li>
-        <li>
-          <a href="http://glyphicons.getbootstrap.com">Glyphicons</a>
-        </li>
-        <li>
-          <a href="http://expo.getbootstrap.com">Bootstrap Expo</a>
-        </li>
-      </ul>
-    </div>
-
-            <footer>
-                <p>&copy; Olaf 2013</p>
-            </footer>
 
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript

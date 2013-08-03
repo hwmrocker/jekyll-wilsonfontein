@@ -1,5 +1,8 @@
 ---
 layout: default
+
+navname: recreation
+
 links:
     de:
         url: /de/erholung.html
@@ -44,13 +47,17 @@ trans:
 {{ page.trans.p_1[page.lang] | markdownify }}
 
 <!-- P[136,59] -->
+{% include double_image.html param="P0000059" param2="P0000135" %}
 
 {{ page.trans.p_2[page.lang] | markdownify }}
 
+{% include double_image.html param="P0000297" param2="P0000298" %}
 <!-- P[311,312] -->
 
 {{ page.trans.p_3[page.lang] | markdownify }}
 
+{% include double_image.html param="P0000235" param2="P0000299" %}
+{% include double_image.html param="P0000294" param2="P0000293" %}
 <!-- P[313,248] -->
 <!-- P[87,307] -->
 {{ page.trans.p_4[page.lang] | markdownify }}

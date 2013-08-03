@@ -1,6 +1,8 @@
 ---
 layout: default
 
+navname: hunting
+
 links:
     de:
         url: /de/jagd.html
@@ -23,5 +25,6 @@ trans:
 
 ---
 
+{% include image.html param='P0000288' %}
 
 {{ content }}

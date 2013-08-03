@@ -1,6 +1,8 @@
 ---
 layout: default
 
+navname: contact
+
 links:
     de:
         url: /de/kontakt.html

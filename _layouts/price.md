@@ -1,5 +1,8 @@
 ---
 layout: default
+
+navname: price
+
 links:
     de:
         url: /de/preise.html
