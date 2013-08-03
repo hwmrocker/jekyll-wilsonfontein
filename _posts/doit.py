@@ -6,21 +6,62 @@ import os
 
 IN = '2013-03-05-photos.md'
 OUT = IN + '.new'
+def load():
+    yaml_context = []
+    end = []
+    yaml_context_idx = 0
+    for line in codecs.open(IN, encoding="utf-8"):
+        if line == "---\n":
+            yaml_context_idx += 1
+            # outfh.write(line)
+            continue
+        if yaml_context_idx == 1:
+            yaml_context.append(line)
+        elif yaml_context_idx > 1:
+            end.append(line)
 
-yaml_context = []
-end = []
-yaml_context_idx = 0
-for line in codecs.open(IN, encoding="utf-8"):
-    if line == "---\n":
-        yaml_context_idx += 1
-        # outfh.write(line)
-        continue
-    if yaml_context_idx == 1:
-        yaml_context.append(line)
-    elif yaml_context_idx > 1:
-        end.append(line)
+    o = yaml.load("\n".join(yaml_context))
+    return o
+o=None
+index_templ = """---
+categories: [%(lang)s, %(photo_trans)s %(cat)s]
+lang: %(lang)s
+layout: default
+---
 
-o = yaml.load("\n".join(yaml_context))
+hio
+
+{%% for post in site.posts %%}
+    {%% assign category_size = post.categories | size %%}
+    {%% if post.categories contains '%(lang)s' and post.categories contains '%(photo_trans)s' %(extra_cat)s and category_size == 3 %%}{%% include photo_thumb.hmtl post=post %%}{%% endif %%}
+{%% endfor %%}"""
+
+extra_cat_templ = "and post.categories contains '%(cat)s'"
+def createIdx(lang, cat):
+    extra_cat = ""
+    if cat is not None:
+        extra_cat = extra_cat_templ % {"cat":cat}
+    formatd ={
+        "lang": lang,
+        "cat": ", %s" % cat if cat is not None else "",
+        "photo_trans": lang2folders[lang].split('/')[1],
+        "extra_cat": extra_cat
+    }
+    final_txt = index_templ % formatd
+
+    path = "../%s/" % lang2folders[lang]
+    if cat is not None:
+        path += cat + "/"
+    os.system("mkdir -p %s" %path)
+    path += "index.html"
+    with open(path, "w") as fh:
+        fh.write(final_txt)
+
+def mkIdx():
+    for lang in lang2folders.keys():
+        for cat in catlang.keys():
+            createIdx(lang, catlang[cat][lang])
+        createIdx(lang, None)
 
 lang2folders = {
     'de':'de/fotos',
@@ -106,7 +147,6 @@ def writeIt(o=o):
         date += timedelta(days=1)
 
 def genfn(pic, cat=None):
-    if cat == "none": cat = None
     return "%s-%s%s" % (pic["date"],("%s-"%cat) if cat is not None else "",pic["pid"])
 def genlnk(pic, cat=None, folder=None):
     if cat in (None, "none"):
@@ -122,19 +162,21 @@ def writeIt2(o=o):
             _write_it2(pic, cat, next, prev)
 
 def _write_it2(pic, cat=None, next=None, prev=None):
-    if cat is None: cat = "none"
     for lang, folder in lang2folders.iteritems():
+        cats = folder.split('/')
+        if cat is not None:
+            cats += [catlang[cat][lang]]
         nd = {
             'lang':lang,
             'layout':'photo',
             'picname':pic["pid"],
-            'categories':folder.split('/')+[catlang[cat][lang]],
+            'categories':cats,
             'tags':pic["tags"][:],
             'next_photo':genlnk(next,cat,folder) if next is not None else None,
             'prev_photo':genlnk(prev,cat,folder) if prev is not None else None
         }
 
-        _folder = "%s/%s" %(folder, "%s/"%cat if cat != "none" else "")
+        _folder = "%s/%s" %(folder, "%s/"%cat if cat is not None else "")
         os.system("mkdir -p %s" %_folder)
         with codecs.open(_folder+'/%s.md'%genfn(pic, cat), 'w', encoding="utf-8") as outfh:
             outfh.write("---\n")
