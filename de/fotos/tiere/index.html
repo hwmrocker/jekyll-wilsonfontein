@@ -1,0 +1,12 @@
+---
+categories: [de, fotos , tiere]
+lang: de
+layout: default
+---
+
+hio
+
+{% for post in site.posts %}
+    {% assign category_size = post.categories | size %}
+    {% if post.categories contains 'de' and post.categories contains 'fotos' and post.categories contains 'tiere' and category_size == 3 %}{% include photo_thumb.hmtl post=post %}{% endif %}
+{% endfor %}

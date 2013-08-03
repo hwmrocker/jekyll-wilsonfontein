@@ -1,0 +1,12 @@
+---
+categories: [en, photos , recreation]
+lang: en
+layout: default
+---
+
+hio
+
+{% for post in site.posts %}
+    {% assign category_size = post.categories | size %}
+    {% if post.categories contains 'en' and post.categories contains 'photos' and post.categories contains 'recreation' and category_size == 3 %}{% include photo_thumb.hmtl post=post %}{% endif %}
+{% endfor %}
