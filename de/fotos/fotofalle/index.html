@@ -2,11 +2,14 @@
 categories: [de, fotos , fotofalle]
 lang: de
 layout: default
+navname: photos
+h1: fotos
+p1: fotofalle
 ---
-
-hio
 
 {% for post in site.posts %}
     {% assign category_size = post.categories | size %}
-    {% if post.categories contains 'de' and post.categories contains 'fotos' and post.categories contains 'fotofalle' and category_size == 3 %}{% include photo_thumb.html post=post %}{% endif %}
+    {% assign pid = post.picname %}
+    {% assign album_path = 'de/fotos/fotofalle/' %}
+    {% if post.categories contains 'de' and post.categories contains 'fotos' and post.categories contains 'fotofalle' and category_size == 3 %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
 {% endfor %}

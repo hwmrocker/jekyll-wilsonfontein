@@ -1,15 +1,42 @@
 ---
 layout: default
+navname: photos
 ---
+{% assign description = page.picinfo[page.lang] %}
+
 {% assign o = site.tags.hideme[0] %}
-
 {% assign pic = o.pics[page.picname] %}
+{% assign title = pic.title_trans[page.lang] %}
 
+{% if title == "" or title == null %}
+ {% assign title = pic.title %}
+{% endif %}
 
-({{pic}})
+<div class="row">
+    <div class="col-1">
+        <div class="left"> 
+        {% if page.prev_photo %} 
+            <a href="{{ page.prev_photo }}" title="previous">&laquo; Previous</a> 
+        {% endif %} 
+        </div> 
+    </div>
+    <div class="col-10">
+        <img src="{{ site.url }}/img/photos/{{ pic.url }}" class="img-thumbnail container img-responsive"/><br>
+    </div>
+    <div class="col-1">
+        <div class="right"> 
+        {% if page.next_photo %} 
+            <a href="{{ page.next_photo }}" title="next Post">Next &raquo; </a> 
+        {% endif %} 
+        </div> 
+    </div>
+</div>
+<div class="col-10 col-lg-6 center clearfix caption">
+    <span class="photographer">© {{ pic.author}}</span> -
+    <span class="title">{{ title }}</span>
+    <p>{{ description }}</p>
+</div>
 
-<img src="/img/photos/{{ pic.url }}" />
-©{{ pic.author}}
 
 {% for tag in pic.tags %}
 {{tag}} 
@@ -18,18 +45,3 @@ layout: default
 
 {{ content }}
 
-<div id="page-navigation"> 
-        <div class="clear">&nbsp;</div> 
-        <div class="left"> 
-        {% if page.prev_photo %} 
-                <a href="{{ page.prev_photo }}" title="previous">&laquo; Previous</a> 
-        {% endif %} 
-        </div> 
-
-        <div class="right"> 
-        {% if page.next_photo %} 
-                <a href="{{ page.next_photo }}" title="next Post">Next &raquo; </a> 
-        {% endif %} 
-        </div> 
-        <div class="clear">&nbsp;</div> 
-</div>

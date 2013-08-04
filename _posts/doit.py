@@ -24,16 +24,19 @@ def load():
     return o
 o=None
 index_templ = """---
-categories: [%(lang)s, %(photo_trans)s %(cat)s]
+categories: [%(lang)s, %(photo_trans)s %(cat_comma)s]
 lang: %(lang)s
 layout: default
+navname: photos
+h1: %(photo_trans)s
+p1: %(cat)s
 ---
-
-hio
 
 {%% for post in site.posts %%}
     {%% assign category_size = post.categories | size %%}
-    {%% if post.categories contains '%(lang)s' and post.categories contains '%(photo_trans)s' %(extra_cat)s and category_size == 3 %%}{%% include photo_thumb.html post=post %%}{%% endif %%}
+    {%% assign pid = post.picname %%}
+    {%% assign album_path = '%(album_path)s' %%}
+    {%% if post.categories contains '%(lang)s' and post.categories contains '%(photo_trans)s' %(extra_cat)s and category_size == %(cat_size)d %%}{%% include photo_thumb.html param=pid param2=album_path %%}{%% endif %%}
 {%% endfor %%}"""
 
 extra_cat_templ = "and post.categories contains '%(cat)s'"
@@ -41,20 +44,25 @@ def createIdx(lang, cat):
     extra_cat = ""
     if cat is not None:
         extra_cat = extra_cat_templ % {"cat":cat}
+    path = "%s/" % lang2folders[lang]
+    if cat is not None:
+        path += cat + "/"
     formatd ={
         "lang": lang,
-        "cat": ", %s" % cat if cat is not None else "",
+        "cat_comma": ", %s" % cat if cat is not None else "",
+        "cat": cat if cat is not None else "",
         "photo_trans": lang2folders[lang].split('/')[1],
-        "extra_cat": extra_cat
+        "extra_cat": extra_cat,
+        "cat_size": 2 if cat is None else 3,
+        "album_path": path
     }
     final_txt = index_templ % formatd
 
-    path = "../%s/" % lang2folders[lang]
-    if cat is not None:
-        path += cat + "/"
+    if cat is None:
+        path += "all/"
     os.system("mkdir -p %s" %path)
     path += "index.html"
-    with open(path, "w") as fh:
+    with open("../"+path, "w") as fh:
         fh.write(final_txt)
 
 def mkIdx():

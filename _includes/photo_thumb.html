@@ -1,1 +1,16 @@
-{{ post.picname }} {{ post.categories }} {{ category_size }}
+{% assign o = site.tags.hideme[0] %}
+{% assign pic = o.pics[include.param] %}
+{% assign title = pic.title_trans[page.lang] %}
+
+{% if title == "" or title == null %}
+ {% assign title = pic.title %}
+{% endif %}
+
+{% if page.lang == "de" %}
+{% endif %}
+{% capture foo %}/de/fotos/{{ include.param2 }}P0000001.html{% endcapture %}
+
+<div class="col-4 col-lg-2 margin-bottom">
+    <a href="{{ site.url }}/{{ include.param2 }}{{ pic.pid }}.html">
+    <img src="{{ site.url }}/img/thumbs/{{ pic.url }}" class="img-thumbnail center img-responsive" alt="{{ title }}" title="{{ title }}"/></a>
+</div>

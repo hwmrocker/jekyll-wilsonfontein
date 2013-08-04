@@ -2,11 +2,14 @@
 categories: [fr, photos , spycam]
 lang: fr
 layout: default
+navname: photos
+h1: photos
+p1: spycam
 ---
-
-hio
 
 {% for post in site.posts %}
     {% assign category_size = post.categories | size %}
-    {% if post.categories contains 'fr' and post.categories contains 'photos' and post.categories contains 'spycam' and category_size == 3 %}{% include photo_thumb.html post=post %}{% endif %}
+    {% assign pid = post.picname %}
+    {% assign album_path = 'fr/photos/spycam/' %}
+    {% if post.categories contains 'fr' and post.categories contains 'photos' and post.categories contains 'spycam' and category_size == 3 %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
 {% endfor %}

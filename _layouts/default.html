@@ -171,7 +171,7 @@ navbar:
     <!-- Page content of course! -->
     <div class="row">
         <div class="col-12 col-lg-9 col-offset-1">
-          <h1 class="big">{{ page.h1 }}<small>{{page.p1}}</small></h1>
+          <h1 class="big">{{ page.h1 | capitalize}}{% if page.p1 %} <small>{{ page.p1 | capitalize}}</small>{% endif %}</h1>
           {{ content | markdownify }}
           <footer>
             <p class="pull-right">&copy; Olaf 2013</p>
