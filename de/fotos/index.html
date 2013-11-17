@@ -1,15 +1,20 @@
 ---
 categories: [de, fotos , ]
 lang: de
-layout: default
-navname: photos
+layout: albumlist
 h1: fotos
-p1: 
+p1: Übersicht
 ---
 
-{% for post in site.posts %}
-    {% assign category_size = post.categories | size %}
-    {% assign pid = post.picname %}
-    {% assign album_path = 'de/fotos//' %}
-    {% if post.categories contains 'de' and post.categories contains 'fotos' and post.categories contains '' and category_size == 3 %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
+
+
+
+
+{% for album in page.bla %}
+    {% for post in site.posts %}
+        {% assign category_size = post.categories | size %}
+        {% assign pid = post.picname %}
+        {% assign album_path = 'de/fotos//' %}
+        {% if post.categories contains 'de' and post.categories contains 'fotos' and post.categories contains '' and category_size == 3 %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
+    {% endfor %}
 {% endfor %}
