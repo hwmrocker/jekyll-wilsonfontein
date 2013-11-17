@@ -257,7 +257,7 @@ def foo():
 
     saveImagesInfos()
 
-# createAllAlbumIndexHTMLPages()
+createAllAlbumIndexHTMLPages()
 
 o = loadPhotoInfos()
 generatePhotoHTMLPages(o)
