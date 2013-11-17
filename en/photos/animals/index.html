@@ -6,10 +6,11 @@ navname: photos
 h1: photos
 p1: animals
 ---
+{% assign o = site.tags.hideme[0] %}
 
-{% for post in site.posts %}
-    {% assign category_size = post.categories | size %}
-    {% assign pid = post.picname %}
-    {% assign album_path = 'en/photos/animals/' %}
-    {% if post.categories contains 'en' and post.categories contains 'photos' and post.categories contains 'animals' and category_size == 3 %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
+{% for pico in o.pics %}
+    {% assign post = pico[1] %}
+    {% assign pid = post.pid %}
+    {% assign album_path = '../en/photos/animals/' %}
+    {% if post.categories contains 'animals' %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
 {% endfor %}

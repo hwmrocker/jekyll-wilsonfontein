@@ -1,0 +1,16 @@
+---
+categories: [en, photos , all]
+lang: en
+layout: default
+navname: photos
+h1: photos
+p1: all
+---
+{% assign o = site.tags.hideme[0] %}
+
+{% for pico in o.pics %}
+    {% assign post = pico[1] %}
+    {% assign pid = post.pid %}
+    {% assign album_path = '../en/photos/all/' %}
+    {% if post.categories contains 'all' %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
+{% endfor %}
