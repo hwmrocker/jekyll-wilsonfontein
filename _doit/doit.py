@@ -4,6 +4,7 @@ import codecs
 from datetime import datetime, timedelta
 import os
 
+#############################################################
 # Helper functions
 def some(pred, coll):
     for elem in coll:
@@ -14,7 +15,7 @@ def some(pred, coll):
 
 IN = '../_posts/2013-03-05-photos.md'
 OUT = IN + '.new'
-def load():
+def loadPhotoInfos():
     yaml_context = []
     end = []
     yaml_context_idx = 0
@@ -77,10 +78,10 @@ catlang = {
         "en":u"spycam",
         "fr":u"spycam"
     },
-    "none":{
-        "de":"",
-        "en":"",
-        "fr":""
+    "all":{
+        "de":"alles",
+        "en":"all",
+        "fr":"tous"
     }
 }
 #############################################################
@@ -94,45 +95,41 @@ navname: photos
 h1: %(photo_trans)s
 p1: %(cat)s
 ---
+{%% assign o = site.tags.hideme[0] %%}
 
-{%% for post in site.posts %%}
-    {%% assign category_size = post.categories | size %%}
-    {%% assign pid = post.picname %%}
+{%% for pico in o.pics %%}
+    {%% assign post = pico[1] %%}
+    {%% assign pid = post.pid %%}
     {%% assign album_path = '%(album_path)s' %%}
-    {%% if post.categories contains '%(lang)s' and post.categories contains '%(photo_trans)s' %(extra_cat)s and category_size == %(cat_size)d %%}{%% include photo_thumb.html param=pid param2=album_path %%}{%% endif %%}
+    {%% if post.categories contains '%(cat_orig)s' %%}{%% include photo_thumb.html param=pid param2=album_path %%}{%% endif %%}
 {%% endfor %%}"""
 
-extra_cat_templ = "and post.categories contains '%(cat)s'"
+extra_cat_templ = ""
 def createAlbumIndexHTMLPage(lang, cat):
-    extra_cat = ""
-    if cat is not None:
-        extra_cat = extra_cat_templ % {"cat":cat}
-    path = "%s/" % lang2folders[lang]
-    if cat is not None:
-        path += cat + "/"
+    assert cat is not None
+    cat_orig, cat = cat, catlang[cat][lang]
+
+    path = "../%s/%s/" % (lang2folders[lang], cat)
+
     formatd ={
         "lang": lang,
         "cat_comma": ", %s" % cat if cat is not None else "",
-        "cat": cat if cat is not None else "",
+        "cat": cat,
+        "cat_orig": cat_orig,
         "photo_trans": lang2folders[lang].split('/')[1],
-        "extra_cat": extra_cat,
-        "cat_size": 2 if cat is None else 3,
         "album_path": path
     }
     final_txt = index_templ % formatd
 
-    if cat is None:
-        path += "all/"
-    os.system("mkdir -p %s" %path)
-    path += "index.html"
-    with open("../"+path, "w") as fh:
+    os.system("mkdir -p %s" % path)
+    with open("%sindex.html" % path, "w") as fh:
         fh.write(final_txt)
 
-def createAllAlbumIndesHTMLPages():
+def createAllAlbumIndexHTMLPages():
     for lang in lang2folders.keys():
         for cat in catlang.keys():
-            createAlbumIndexHTMLPage(lang, catlang[cat][lang])
-        createAlbumIndexHTMLPage(lang, None)
+            createAlbumIndexHTMLPage(lang, cat)
+        # createAlbumIndexHTMLPage(lang, None)
 
 
 # def update(o=o):
@@ -173,40 +170,38 @@ def createAllAlbumIndesHTMLPages():
 
 
 def genfn(pic, cat=None):
-    return "%s-%s%s" % (pic["date"],("%s-"%cat) if cat is not None else "",pic["pid"])
+    return pic["pid"]
+    return "%s-%s" % (pic["date"],pic["pid"])
 def genlnk(pic, cat=None, folder=None):
-    if cat in (None, "none"):
-        return "/%s/%s.html"%(folder,pic["pid"])
+    return "/%s/%s/%s.html"%(folder,cat,pic["pid"])
     return "/%s/%s/%s%s.html"%(folder,cat,("%s-"%cat) if cat is not None else "",pic["pid"])
 
 
-def writeIt2(o=o):
+def generatePhotoHTMLPages(o):
     for cat in catlang.keys():
-        if cat == "none": cat = None
         catlist=[p for p in o["pics"].itervalues() if (cat in p.get("categories",[]) or cat is None)]
         for idx, pic in enumerate(catlist):
             prev = catlist[idx-1] if idx > 0 else None
             next = catlist[idx+1] if (idx+1) < len(catlist) else None
-            _write_it2(pic, cat, next, prev)
+            saveImageHTML(pic, cat, next, prev)
 
-def _write_it2(pic, cat=None, next=None, prev=None):
+def saveImageHTML(pic, cat, next=None, prev=None):
     for lang, folder in lang2folders.iteritems():
-        cats = folder.split('/')
-        if cat is not None:
-            cats += [catlang[cat][lang]]
+        cat_trans = catlang[cat][lang]
+        cats = folder.split('/') + [cat_trans]
         nd = {
             'lang':lang,
             'layout':'photo',
             'picname':pic["pid"],
             'categories':cats,
             'tags':pic["tags"][:],
-            'next_photo':genlnk(next,cat,folder) if next is not None else None,
-            'prev_photo':genlnk(prev,cat,folder) if prev is not None else None
+            'next_photo':genlnk(next,cat_trans,folder) if next is not None else None,
+            'prev_photo':genlnk(prev,cat_trans,folder) if prev is not None else None
         }
 
-        _folder = "%s/%s" %(folder, "%s/"%cat if cat is not None else "")
+        _folder = "../%s/%s" % (folder, cat_trans)
         os.system("mkdir -p %s" %_folder)
-        with codecs.open(_folder+'/%s.md'%genfn(pic, cat), 'w', encoding="utf-8") as outfh:
+        with codecs.open(_folder+'/%s.md'%genfn(pic, cat_trans), 'w', encoding="utf-8") as outfh:
             outfh.write("---\n")
             outfh.write(yaml.safe_dump(nd))
             outfh.write("---\n")
@@ -261,3 +256,8 @@ def foo():
             addCategory(x,tits)
 
     saveImagesInfos()
+
+# createAllAlbumIndexHTMLPages()
+
+o = loadPhotoInfos()
+generatePhotoHTMLPages(o)
