@@ -1,0 +1,16 @@
+{% assign o = site.tags.hideme[0] %}
+{% assign pic = o.pics[include.param] %}
+{% assign title = pic.title_trans[page.lang] %}
+
+{% if title == "" or title == null %}
+ {% assign title = pic.title %}
+{% endif %}
+
+<div class="col-12">
+    <img src="{{ site.url }}/img/photos/{{ pic.url }}" class="img-thumbnail  center img-responsive"/><br>
+</div>
+<div class="col-10 col-lg-6 center clearfix caption">
+    <span class="photographer">© {{ pic.author}}</span> -
+    <span class="title">{{ title }}</span>
+    {% if include.param2 %}<p>{{ include.param2 }}</p>{% endif %}
+</div>

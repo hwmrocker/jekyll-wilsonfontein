@@ -1,0 +1,34 @@
+{% assign o = site.tags.hideme[0] %}
+{% assign pic = o.pics[include.param] %}
+{% assign title = pic.title_trans[page.lang] %}
+
+{% if title == "" or title == null %}
+ {% assign title = pic.title %}
+{% endif %}
+
+{% assign pic2 = o.pics[include.param2] %}
+{% assign title2 = pic2.title_trans[page.lang] %}
+
+{% if title2 == "" or title2 == null %}
+ {% assign title2 = pic2.title %}
+{% endif %}
+
+<div class="col-6">
+    <img src="{{ site.url }}/img/bigthumbs/{{ pic.url }}" class="img-thumbnail  center img-responsive"/><br>
+</div>
+<div class="col-6">
+    <img src="{{ site.url }}/img/bigthumbs/{{ pic2.url }}" class="img-thumbnail  center img-responsive"/><br>
+</div>
+<div class="col-6">
+    <div class="col-10 col-lg-6 center clearfix caption">
+        <span class="photographer">© {{ pic.author }}</span> -
+        <span class="title">{{ title }}</span>
+    </div>
+</div>
+
+<div class="col-6">
+    <div class="col-10 col-lg-6 center clearfix caption">
+        <span class="photographer">© {{ pic2.author }}</span> -
+        <span class="title">{{ title2 }}</span>
+    </div>
+</div>

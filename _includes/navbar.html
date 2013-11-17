@@ -1,0 +1,3 @@
+{% for navitem in page.navbar %}
+  <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
+{% endfor %}
