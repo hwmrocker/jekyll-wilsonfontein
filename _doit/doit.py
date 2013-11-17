@@ -12,7 +12,7 @@ def some(pred, coll):
     return None
 
 
-IN = '2013-03-05-photos.md'
+IN = '../_posts/2013-03-05-photos.md'
 OUT = IN + '.new'
 def load():
     yaml_context = []
