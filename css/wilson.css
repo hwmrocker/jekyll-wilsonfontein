@@ -7,10 +7,12 @@
 
 /* Key scaffolding
 -------------------------------------------------- */
-
+html, body {
+  min-height: 100%;
+}
 body {
   position: relative; /* For scrollyspy */
-  padding-top: 50px; /* Account for fixed navbar */
+  /*padding-top: 50px;  Account for fixed navbar */
   color: #333;
   background: #d0c4b6 url('/img/pics/noise.png');
 }
