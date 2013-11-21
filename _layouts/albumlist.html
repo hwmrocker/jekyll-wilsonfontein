@@ -11,7 +11,7 @@ navname: photos
 <h2>{{album.name}}</h2>
 <div class="album preview">
     {% for pic in album.pics %}
-    {% include photo_thumb.html param=pic.pid param2=album.name %}
+    {% include photo_thumb.html pid=pic.pid album_path=album.path %}
     {% endfor %}
 </div>
 {% endfor %}

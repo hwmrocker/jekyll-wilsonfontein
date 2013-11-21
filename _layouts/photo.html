@@ -37,11 +37,12 @@ navname: photos
     <p>{{ description }}</p>
 </div>
 
-
+<div class="tags">
 {% for tag in pic.tags %}
-{{tag}} 
+    <span class="tag">{{tag}}</span>
 {% if forloop.rindex0 != 0 %}, {% endif %}
 {% endfor %}
+</div>
 
 {{ content }}
 

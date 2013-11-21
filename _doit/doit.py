@@ -106,7 +106,7 @@ p1: %(cat)s
     {%% assign post = pico[1] %%}
     {%% assign pid = post.pid %%}
     {%% assign album_path = '%(album_path)s' %%}
-    {%% if post.categories contains '%(cat_orig)s' %%}{%% include photo_thumb.html param=pid param2=album_path %%}{%% endif %%}
+    {%% if post.categories contains '%(cat_orig)s' %%}{%% include photo_thumb.html pid=pid album_path=album_path %%}{%% endif %%}
 {%% endfor %%}"""
 
 extra_cat_templ = ""
@@ -122,7 +122,7 @@ def createAlbumIndexHTMLPage(lang, cat):
         "cat": cat,
         "cat_orig": cat_orig,
         "photo_trans": lang2folders[lang].split('/')[1],
-        "album_path": path
+        "album_path": path[2:]
     }
     final_txt = index_templ % formatd
 
@@ -182,7 +182,7 @@ def genlnk(pic, cat=None, folder=None):
     return "/%s/%s/%s%s.html"%(folder,cat,("%s-"%cat) if cat is not None else "",pic["pid"])
 
 
-def generatePhotoHTMLPages(o):
+def generatePhotoHTMLPages(o, create_img=True):
     photoindex = []
     for cat in catlang.keys():
         catlist=[p for p in sorted(o["pics"].itervalues(), reverse=True) if (cat in p.get("categories",[]) or cat is None)]
@@ -190,7 +190,8 @@ def generatePhotoHTMLPages(o):
         for idx, pic in enumerate(catlist):
             prev = catlist[idx-1] if idx > 0 else None
             next = catlist[idx+1] if (idx+1) < len(catlist) else None
-            saveImageHTML(pic, cat, next, prev)
+            if create_img:
+                saveImageHTML(pic, cat, next, prev)
     saveImageHTMLIndex(photoindex)
 
 def saveImageHTMLIndex(photoindex):
@@ -201,12 +202,14 @@ def saveImageHTMLIndex(photoindex):
             "categories": [lang, folder.split("/")[0], ],
             "lang": lang,
             "layout": "albumlist",
-            "h1": folder.split("/")[0].title(),
+            "h1": folder.split("/")[1].title(),
             "p1": preview[lang],
         }
         for cat, prev_images in photoindex:
             cat_trans = catlang[cat][lang]
-            nd["albums"].append(dict(name=cat_trans, pics=prev_images))
+            _prev_images = [p.copy() for p in prev_images]
+            
+            nd["albums"].append(dict(name=cat_trans.title(), pics=_prev_images, path="/%s/%s/"%(folder,cat_trans)))
             # TDOD generate index
         _folder = "../%s" % folder
         os.system("mkdir -p %s" % _folder)
@@ -290,5 +293,5 @@ def foo():
 
 # createAllAlbumIndexHTMLPages()
 
-# o = loadPhotoInfos()
-# generatePhotoHTMLPages(o)
+o = loadPhotoInfos()
+generatePhotoHTMLPages(o, False)
