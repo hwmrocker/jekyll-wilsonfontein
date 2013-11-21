@@ -31,7 +31,7 @@ def loadPhotoInfos():
 
     o = yaml.load("\n".join(yaml_context))
     return o
-o=None
+
 
 #############################################################
 # Translations
@@ -40,6 +40,11 @@ lang2folders = {
     'de':'de/fotos',
     'en':'en/photos',
     'fr':'fr/photos'
+}
+preview = {
+    'de': 'Übersicht',
+    'en': "Preview",
+    'fr': "avant-première"
 }
 catlang = {
     "action":{
@@ -178,12 +183,38 @@ def genlnk(pic, cat=None, folder=None):
 
 
 def generatePhotoHTMLPages(o):
+    photoindex = []
     for cat in catlang.keys():
-        catlist=[p for p in o["pics"].itervalues() if (cat in p.get("categories",[]) or cat is None)]
+        catlist=[p for p in sorted(o["pics"].itervalues(), reverse=True) if (cat in p.get("categories",[]) or cat is None)]
+        photoindex.append((cat, catlist[:6]))
         for idx, pic in enumerate(catlist):
             prev = catlist[idx-1] if idx > 0 else None
             next = catlist[idx+1] if (idx+1) < len(catlist) else None
             saveImageHTML(pic, cat, next, prev)
+    saveImageHTMLIndex(photoindex)
+
+def saveImageHTMLIndex(photoindex):
+    # print "saveImageHTMLIndex", photoindex
+    for lang, folder in lang2folders.iteritems():
+        nd ={
+            "albums": [],
+            "categories": [lang, folder.split("/")[0], ],
+            "lang": lang,
+            "layout": "albumlist",
+            "h1": folder.split("/")[0].title(),
+            "p1": preview[lang],
+        }
+        for cat, prev_images in photoindex:
+            cat_trans = catlang[cat][lang]
+            nd["albums"].append(dict(name=cat_trans, pics=prev_images))
+            # TDOD generate index
+        _folder = "../%s" % folder
+        os.system("mkdir -p %s" % _folder)
+        print folder
+        with codecs.open(_folder+'/index.html', 'w', encoding="utf-8") as outfh:
+            outfh.write("---\n")
+            outfh.write(yaml.safe_dump(nd))
+            outfh.write("---\n")
 
 def saveImageHTML(pic, cat, next=None, prev=None):
     for lang, folder in lang2folders.iteritems():
@@ -228,14 +259,14 @@ def _get_categories(*tags):
         cats.append("landscape")
 
 
-def saveImagesInfos(o=o):
+def saveImagesInfos(o):
     with codecs.open(OUT, 'w', encoding="utf-8") as outfh:
         outfh.write("---\n")
         outfh.write(yaml.safe_dump(o))
         outfh.write("---\n")
         # outfh.write("".join(end))
 
-def addCategory(cat, titles, o=o):
+def addCategory(cat, titles, o):
     "???"
     for key in o['pics'].keys():
         if o['pics'][key]['title'] in titles:
@@ -257,7 +288,7 @@ def foo():
 
     saveImagesInfos()
 
-createAllAlbumIndexHTMLPages()
+# createAllAlbumIndexHTMLPages()
 
-o = loadPhotoInfos()
-generatePhotoHTMLPages(o)
+# o = loadPhotoInfos()
+# generatePhotoHTMLPages(o)
