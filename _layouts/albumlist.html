@@ -1,17 +1,24 @@
 ---
-categories: [de, fotos , ]
-lang: de
 layout: default
 navname: photos
 
+more:
+    de: Ganzes Album ansehen
+    en: View complete album
+    fr: Voir l'album complet
 
 ---
 
 {% for album in page.albums %}
-<h2>{{album.name}}</h2>
-<div class="album preview">
-    {% for pic in album.pics %}
-    {% include photo_thumb.html pid=pic.pid album_path=album.path %}
-    {% endfor %}
+<div class="album container">
+    <div class="col-12">
+        <h2><a href="{{site.url}}{{album.path}}">{{album.name}}</a></h2>
+        <div class="album-imgs preview">
+            {% for pic in album.pics %}
+            {% include photo_thumb.html pid=pic.pid album_path=album.path %}
+            {% endfor %}
+        </div>
+        <a href="{{site.url}}{{album.path}}">{{page.more[page.lang]}}</a>
+    </div>
 </div>
 {% endfor %}

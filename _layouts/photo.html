@@ -14,7 +14,7 @@ navname: photos
 
 <div class="row">
     <div class="col-1">
-        <div class="left"> 
+        <div id="prev" class="left"> 
         {% if page.prev_photo %} 
             <a href="{{ page.prev_photo }}" title="previous">&laquo; Previous</a> 
         {% endif %} 
@@ -24,7 +24,7 @@ navname: photos
         <img src="{{ site.url }}/img/photos/{{ pic.url }}" class="img-thumbnail center img-responsive"/><br>
     </div>
     <div class="col-1">
-        <div class="right"> 
+        <div id="next" class="right"> 
         {% if page.next_photo %} 
             <a href="{{ page.next_photo }}" title="next Post">Next &raquo; </a> 
         {% endif %} 

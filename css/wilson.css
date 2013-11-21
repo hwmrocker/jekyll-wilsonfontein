@@ -65,3 +65,20 @@ h1.big {
 .margin-bottom {
     margin-bottom: 15px;
 }
+
+.album:nth-child(2n+1) {
+    background: #8D8181;
+    background: -moz-linear-gradient(top, rgba(141,129,129,0.5) 0%, rgba(196,180,180,0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(141,129,129,0.5)), color-stop(100%,rgba(196,180,180,0.5))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(141,129,129,0.5) 0%,rgba(196,180,180,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(141,129,129,0.5) 0%,rgba(196,180,180,0.5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(141,129,129,0.5) 0%,rgba(196,180,180,0.5) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(141,129,129,0.5) 0%,rgba(196,180,180,0.5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808d8181', endColorstr='#80c4b4b4',GradientType=0 ); /* IE6-9 */
+    border-radius: 5px;
+    color: white;
+}
+
+.tags {
+    display: none;
+}
