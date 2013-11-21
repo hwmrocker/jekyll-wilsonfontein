@@ -1,43 +1,40 @@
 ---
 albums:
-- name: plantes
+- name: Plantes
+  path: /fr/photos/plantes/
   pics:
-  - &id003
-    author: Ingo Gladis
-    categories: [all, landscape, plants]
+  - author: Ingo Gladis
+    categories: &id007 [all, landscape, plants]
     date: '2011-01-19'
-    hiddentags: [cloudless, plain]
+    hiddentags: &id008 [cloudless, plain]
     pid: P0000197
-    tags: [Aloe, Hottentotten Church]
+    tags: &id009 [Aloe, Hottentotten Church]
     title: Hottentotten church
-    title_trans: {de: Hottentottenkirche, en: Hottentotten Church, fr: Hottentotten
+    title_trans: &id010 {de: Hottentottenkirche, en: Hottentotten Church, fr: Hottentotten
         Church}
     url: hottentottenkirche2.jpg
-  - &id004
-    author: Udo Krappe
-    categories: [all, plants]
+  - author: Udo Krappe
+    categories: &id011 [all, plants]
     date: '2011-04-16'
-    hiddentags: []
+    hiddentags: &id012 []
     pid: P0000284
-    tags: [Euphorbia Monteroi]
+    tags: &id013 [Euphorbia Monteroi]
     title: P1000515
     url: P1000515.JPG
-  - &id005
-    author: Udo Krappe
-    categories: [all, plants]
+  - author: Udo Krappe
+    categories: &id014 [all, plants]
     date: '2011-03-05'
-    hiddentags: []
+    hiddentags: &id015 []
     pid: P0000242
-    tags: [Euphorbia, Euphorbia Monteroi]
+    tags: &id016 [Euphorbia, Euphorbia Monteroi]
     title: Euphoribia Monteroi
     url: P1000516.JPG
-  - &id006
-    author: Udo Krappe
-    categories: [all, landscape, plants]
+  - author: Udo Krappe
+    categories: &id017 [all, landscape, plants]
     date: '2011-08-18'
-    hiddentags: [rock]
+    hiddentags: &id018 [rock]
     pid: P0000408
-    tags: [Brandberg Gensis, Plant]
+    tags: &id019 [Brandberg Gensis, Plant]
     title: P1000515_1
     url: P1000515_1.JPG
   - author: Olaf Gladis
@@ -56,15 +53,15 @@ albums:
     tags: [Camelthorntree]
     title: DSC_0393
     url: DSC_0393.JPG
-- name: spycam
+- name: Spycam
+  path: /fr/photos/spycam/
   pics:
-  - &id001
-    author: Olaf Gladis
-    categories: [all, animals, spycam]
+  - author: Olaf Gladis
+    categories: &id001 [all, animals, spycam]
     date: '2011-11-18'
-    hiddentags: []
+    hiddentags: &id002 []
     pid: P0000500
-    tags: [Fotofalle, Leopard]
+    tags: &id003 [Fotofalle, Leopard]
     title: SUNP0002
     url: SUNP0002.JPG
   - author: Ingo Gladis
@@ -107,7 +104,8 @@ albums:
     tags: [Fotofalle, Hyena]
     title: PICT0079_2
     url: PICT0079_2.JPG
-- name: recreation
+- name: Recreation
+  path: /fr/photos/recreation/
   pics:
   - author: Olaf Gladis
     categories: [all, recreation]
@@ -157,33 +155,31 @@ albums:
     tags: [Devils Gorge, Zebra Stripes]
     title: zebra_bett1
     url: zebra_bett1.jpg
-- name: animaux
+- name: Animaux
+  path: /fr/photos/animaux/
   pics:
-  - &id002
-    author: Richard Kreipl
-    categories: [all, animals, hunting]
+  - author: Richard Kreipl
+    categories: &id004 [all, animals, hunting]
     date: '2011-04-13'
-    hiddentags: [cross hair, hunting]
+    hiddentags: &id005 [cross hair, hunting]
     pid: P0000281
-    tags: [Klippspringer]
+    tags: &id006 [Klippspringer]
     title: PIC01140
     url: PIC01140.JPG
-  - &id009
-    author: "Philippe J\xE4ger"
-    categories: [all, animals, landscape]
+  - author: "Philippe J\xE4ger"
+    categories: &id026 [all, animals, landscape]
     date: '2011-08-16'
-    hiddentags: [mountain, sunset]
+    hiddentags: &id027 [mountain, sunset]
     pid: P0000406
-    tags: [Bush, Oryx]
+    tags: &id028 [Bush, Oryx]
     title: IMGP3849
     url: IMGP3849.JPG
-  - &id010
-    author: "Philippe J\xE4ger"
-    categories: [all, animals, landscape]
+  - author: "Philippe J\xE4ger"
+    categories: &id029 [all, animals, landscape]
     date: '2011-08-15'
-    hiddentags: [mountain, nice clouds, plain]
+    hiddentags: &id030 [mountain, nice clouds, plain]
     pid: P0000405
-    tags: [Dead Grass, Oryx, Zebra]
+    tags: &id031 [Dead Grass, Oryx, Zebra]
     title: IMGP3570
     url: IMGP3570.JPG
   - author: "Philippe J\xE4ger"
@@ -193,7 +189,7 @@ albums:
     pid: P0000362
     tags: [Bush, Ostrich]
     title: _PHI0802
-    url: _PHI0802.JPG
+    url: PHI0802.JPG
   - author: "Philippe J\xE4ger"
     categories: [all, animals]
     date: '2011-07-01'
@@ -201,20 +197,34 @@ albums:
     pid: P0000360
     tags: [Oryx]
     title: _PHI0584
-    url: _PHI0584.JPG
-  - *id001
-- name: chasse
+    url: PHI0584.JPG
+  - author: Olaf Gladis
+    categories: *id001
+    date: '2011-11-18'
+    hiddentags: *id002
+    pid: P0000500
+    tags: *id003
+    title: SUNP0002
+    url: SUNP0002.JPG
+- name: Chasse
+  path: /fr/photos/chasse/
   pics:
-  - &id007
-    author: Richard Kreipl
-    categories: [all, hunting]
+  - author: Richard Kreipl
+    categories: &id020 [all, hunting]
     date: '2011-03-10'
-    hiddentags: [hunter]
+    hiddentags: &id021 [hunter]
     pid: P0000247
-    tags: [Bishop Cap, Dead Oryx]
+    tags: &id022 [Bishop Cap, Dead Oryx]
     title: PIC01234
     url: PIC01234.JPG
-  - *id002
+  - author: Richard Kreipl
+    categories: *id004
+    date: '2011-04-13'
+    hiddentags: *id005
+    pid: P0000281
+    tags: *id006
+    title: PIC01140
+    url: PIC01140.JPG
   - author: Rachel Karp
     categories: [all, hunting]
     date: '2011-03-07'
@@ -247,7 +257,8 @@ albums:
     tags: []
     title: IMG_1877
     url: IMG_1877.JPG
-- name: action
+- name: Action
+  path: /fr/photos/action/
   pics:
   - author: Olaf Gladis
     categories: [all, action]
@@ -298,29 +309,102 @@ albums:
     tags: [Green Grass, Ingo, Willys]
     title: dune_ride
     url: dune_ride.jpg
-- name: tous
+- name: Tous
+  path: /fr/photos/tous/
   pics:
-  - *id003
-  - *id004
-  - *id005
-  - *id006
-  - &id008
-    author: Richard Kreipl
-    categories: [all, landscape]
+  - author: Ingo Gladis
+    categories: *id007
+    date: '2011-01-19'
+    hiddentags: *id008
+    pid: P0000197
+    tags: *id009
+    title: Hottentotten church
+    title_trans: *id010
+    url: hottentottenkirche2.jpg
+  - author: Udo Krappe
+    categories: *id011
+    date: '2011-04-16'
+    hiddentags: *id012
+    pid: P0000284
+    tags: *id013
+    title: P1000515
+    url: P1000515.JPG
+  - author: Udo Krappe
+    categories: *id014
+    date: '2011-03-05'
+    hiddentags: *id015
+    pid: P0000242
+    tags: *id016
+    title: Euphoribia Monteroi
+    url: P1000516.JPG
+  - author: Udo Krappe
+    categories: *id017
+    date: '2011-08-18'
+    hiddentags: *id018
+    pid: P0000408
+    tags: *id019
+    title: P1000515_1
+    url: P1000515_1.JPG
+  - author: Richard Kreipl
+    categories: &id023 [all, landscape]
     date: '2011-04-14'
-    hiddentags: [plane]
+    hiddentags: &id024 [plane]
     pid: P0000282
-    tags: []
+    tags: &id025 []
     title: PIC01400
     url: PIC01400.JPG
-  - *id007
-- name: paysage
+  - author: Richard Kreipl
+    categories: *id020
+    date: '2011-03-10'
+    hiddentags: *id021
+    pid: P0000247
+    tags: *id022
+    title: PIC01234
+    url: PIC01234.JPG
+- name: Paysage
+  path: /fr/photos/paysage/
   pics:
-  - *id003
-  - *id006
-  - *id008
-  - *id009
-  - *id010
+  - author: Ingo Gladis
+    categories: *id007
+    date: '2011-01-19'
+    hiddentags: *id008
+    pid: P0000197
+    tags: *id009
+    title: Hottentotten church
+    title_trans: *id010
+    url: hottentottenkirche2.jpg
+  - author: Udo Krappe
+    categories: *id017
+    date: '2011-08-18'
+    hiddentags: *id018
+    pid: P0000408
+    tags: *id019
+    title: P1000515_1
+    url: P1000515_1.JPG
+  - author: Richard Kreipl
+    categories: *id023
+    date: '2011-04-14'
+    hiddentags: *id024
+    pid: P0000282
+    tags: *id025
+    title: PIC01400
+    url: PIC01400.JPG
+  - author: "Philippe J\xE4ger"
+    categories: *id026
+    date: '2011-08-16'
+    hiddentags: *id027
+    pid: P0000406
+    tags: *id028
+    title: IMGP3849
+    url: IMGP3849.JPG
+  - author: "Philippe J\xE4ger"
+    categories: *id029
+    date: '2011-08-15'
+    hiddentags: *id030
+    pid: P0000405
+    tags: *id031
+    title: IMGP3570
+    url: IMGP3570.JPG
   - author: Olaf Gladis
     categories: [all, landscape]
     date: '2011-04-01'
@@ -330,7 +414,7 @@ albums:
     title: IMG_6889 Kopie
     url: IMG_6889 Kopie.jpg
 categories: [fr, fr]
-h1: Fr
+h1: Photos
 lang: fr
 layout: albumlist
 p1: "avant-premi\xE8re"

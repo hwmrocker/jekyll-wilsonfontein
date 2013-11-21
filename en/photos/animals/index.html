@@ -11,6 +11,6 @@ p1: animals
 {% for pico in o.pics %}
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
-    {% assign album_path = '../en/photos/animals/' %}
+    {% assign album_path = '/en/photos/animals/' %}
     {% if post.categories contains 'animals' %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
 {% endfor %}

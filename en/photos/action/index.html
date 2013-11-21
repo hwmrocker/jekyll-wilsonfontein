@@ -11,6 +11,6 @@ p1: action
 {% for pico in o.pics %}
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
-    {% assign album_path = '../en/photos/action/' %}
+    {% assign album_path = '/en/photos/action/' %}
     {% if post.categories contains 'action' %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
 {% endfor %}

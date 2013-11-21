@@ -11,6 +11,6 @@ p1: paysage
 {% for pico in o.pics %}
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
-    {% assign album_path = '../fr/photos/paysage/' %}
+    {% assign album_path = '/fr/photos/paysage/' %}
     {% if post.categories contains 'landscape' %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
 {% endfor %}
