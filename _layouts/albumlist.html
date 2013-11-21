@@ -4,9 +4,14 @@ lang: de
 layout: default
 navname: photos
 
-foo:
-    de: ['/de/fotos/action', 'Action']
-    en:
-    fr:
 
 ---
+
+{% for album in page.albums %}
+<h2>{{album.name}}</h2>
+<div class="album preview">
+    {% for pic in album.pics %}
+    {% include photo_thumb.html param=pic.pid param2=album.name %}
+    {% endfor %}
+</div>
+{% endfor %}
