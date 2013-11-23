@@ -245,7 +245,7 @@ def cleanIt():
     "delete all photos posts"
     import os
     for lang, folder in lang2folders.iteritems():
-        os.system("rm -rf %s" % folder)
+        os.system("rm -rf ../%s" % folder)
 
 
 
@@ -291,7 +291,9 @@ def foo():
 
     saveImagesInfos()
 
-# createAllAlbumIndexHTMLPages()
+
+cleanIt()
+createAllAlbumIndexHTMLPages()
 
 o = loadPhotoInfos()
-generatePhotoHTMLPages(o, False)
+generatePhotoHTMLPages(o, True)

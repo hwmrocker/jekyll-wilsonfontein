@@ -18,7 +18,7 @@ albums:
     date: '2011-04-16'
     hiddentags: &id012 []
     pid: P0000284
-    tags: &id013 [Euphorbia Monteroi]
+    tags: &id013 [Brandberg Gensis, Euphorbia Monteroi]
     title: P1000515
     url: P1000515.JPG
   - author: Udo Krappe
@@ -29,14 +29,6 @@ albums:
     tags: &id016 [Euphorbia, Euphorbia Monteroi]
     title: Euphoribia Monteroi
     url: P1000516.JPG
-  - author: Udo Krappe
-    categories: &id017 [all, landscape, plants]
-    date: '2011-08-18'
-    hiddentags: &id018 [rock]
-    pid: P0000408
-    tags: &id019 [Brandberg Gensis, Plant]
-    title: P1000515_1
-    url: P1000515_1.JPG
   - author: Olaf Gladis
     categories: [all, plants]
     date: '2011-04-19'
@@ -46,13 +38,21 @@ albums:
     title: Jung und Alt
     url: IMG_3112.JPG
   - author: "Max N\xFCbel"
-    categories: [all, landscape, plants]
+    categories: &id029 [all, landscape, plants]
     date: '2011-04-04'
-    hiddentags: [blue sky, mountain, no clouds]
+    hiddentags: &id030 [blue sky, mountain, no clouds]
     pid: P0000272
-    tags: [Camelthorntree]
+    tags: &id031 [Camelthorntree]
     title: DSC_0393
     url: DSC_0393.JPG
+  - author: Matthias Kiewer
+    categories: [all, plants]
+    date: '2011-08-04'
+    hiddentags: [blue sky, sunset]
+    pid: P0000394
+    tags: [Dead Grass, Dead Tree]
+    title: IMG_0735
+    url: IMG_0735.JPG
 - name: Fotofalle
   path: /de/fotos/fotofalle/
   pics:
@@ -167,19 +167,19 @@ albums:
     title: PIC01140
     url: PIC01140.JPG
   - author: "Philippe J\xE4ger"
-    categories: &id026 [all, animals, landscape]
+    categories: &id023 [all, animals, landscape]
     date: '2011-08-16'
-    hiddentags: &id027 [mountain, sunset]
+    hiddentags: &id024 [mountain, sunset]
     pid: P0000406
-    tags: &id028 [Bush, Oryx]
+    tags: &id025 [Bush, Oryx]
     title: IMGP3849
     url: IMGP3849.JPG
   - author: "Philippe J\xE4ger"
-    categories: &id029 [all, animals, landscape]
+    categories: &id026 [all, animals, landscape]
     date: '2011-08-15'
-    hiddentags: &id030 [mountain, nice clouds, plain]
+    hiddentags: &id027 [mountain, nice clouds, plain]
     pid: P0000405
-    tags: &id031 [Dead Grass, Oryx, Zebra]
+    tags: &id028 [Dead Grass, Oryx, Zebra]
     title: IMGP3570
     url: IMGP3570.JPG
   - author: "Philippe J\xE4ger"
@@ -210,11 +210,11 @@ albums:
   path: /de/fotos/jagd/
   pics:
   - author: Richard Kreipl
-    categories: &id020 [all, hunting]
+    categories: &id017 [all, hunting]
     date: '2011-03-10'
-    hiddentags: &id021 [hunter]
+    hiddentags: &id018 [hunter]
     pid: P0000247
-    tags: &id022 [Bishop Cap, Dead Oryx]
+    tags: &id019 [Bishop Cap, Dead Oryx]
     title: PIC01234
     url: PIC01234.JPG
   - author: Richard Kreipl
@@ -337,30 +337,30 @@ albums:
     tags: *id016
     title: Euphoribia Monteroi
     url: P1000516.JPG
-  - author: Udo Krappe
-    categories: *id017
-    date: '2011-08-18'
-    hiddentags: *id018
-    pid: P0000408
-    tags: *id019
-    title: P1000515_1
-    url: P1000515_1.JPG
   - author: Richard Kreipl
-    categories: &id023 [all, landscape]
+    categories: &id020 [all, landscape]
     date: '2011-04-14'
-    hiddentags: &id024 [plane]
+    hiddentags: &id021 [plane]
     pid: P0000282
-    tags: &id025 []
+    tags: &id022 []
     title: PIC01400
     url: PIC01400.JPG
   - author: Richard Kreipl
-    categories: *id020
+    categories: *id017
     date: '2011-03-10'
-    hiddentags: *id021
+    hiddentags: *id018
     pid: P0000247
-    tags: *id022
+    tags: *id019
     title: PIC01234
     url: PIC01234.JPG
+  - author: Richard Kreipl
+    categories: *id004
+    date: '2011-04-13'
+    hiddentags: *id005
+    pid: P0000281
+    tags: *id006
+    title: PIC01140
+    url: PIC01140.JPG
 - name: Landschaft
   path: /de/fotos/landschaft/
   pics:
@@ -373,36 +373,28 @@ albums:
     title: Hottentotten church
     title_trans: *id010
     url: hottentottenkirche2.jpg
-  - author: Udo Krappe
-    categories: *id017
-    date: '2011-08-18'
-    hiddentags: *id018
-    pid: P0000408
-    tags: *id019
-    title: P1000515_1
-    url: P1000515_1.JPG
   - author: Richard Kreipl
-    categories: *id023
+    categories: *id020
     date: '2011-04-14'
-    hiddentags: *id024
+    hiddentags: *id021
     pid: P0000282
-    tags: *id025
+    tags: *id022
     title: PIC01400
     url: PIC01400.JPG
   - author: "Philippe J\xE4ger"
-    categories: *id026
+    categories: *id023
     date: '2011-08-16'
-    hiddentags: *id027
+    hiddentags: *id024
     pid: P0000406
-    tags: *id028
+    tags: *id025
     title: IMGP3849
     url: IMGP3849.JPG
   - author: "Philippe J\xE4ger"
-    categories: *id029
+    categories: *id026
     date: '2011-08-15'
-    hiddentags: *id030
+    hiddentags: *id027
     pid: P0000405
-    tags: *id031
+    tags: *id028
     title: IMGP3570
     url: IMGP3570.JPG
   - author: Olaf Gladis
@@ -413,6 +405,14 @@ albums:
     tags: [Stahlhelm]
     title: IMG_6889 Kopie
     url: IMG_6889 Kopie.jpg
+  - author: "Max N\xFCbel"
+    categories: *id029
+    date: '2011-04-04'
+    hiddentags: *id030
+    pid: P0000272
+    tags: *id031
+    title: DSC_0393
+    url: DSC_0393.JPG
 categories: [de, de]
 h1: Fotos
 lang: de

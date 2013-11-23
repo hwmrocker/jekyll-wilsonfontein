@@ -12,5 +12,5 @@ p1: recreation
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
     {% assign album_path = '/fr/photos/recreation/' %}
-    {% if post.categories contains 'recreation' %}{% include photo_thumb.html param=pid param2=album_path %}{% endif %}
+    {% if post.categories contains 'recreation' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
 {% endfor %}
