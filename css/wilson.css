@@ -7,11 +7,13 @@
 
 /* Key scaffolding
 -------------------------------------------------- */
-html, body {
+html {
+  position: relative;
   min-height: 100%;
 }
 body {
-  position: relative; /* For scrollyspy */
+  margin-bottom: 60px;
+  /*position: relative;  For scrollyspy */
   /*padding-top: 50px;  Account for fixed navbar */
   color: #333;
   background: #d0c4b6 url('/img/pics/noise.png');
@@ -81,4 +83,25 @@ h1.big {
 
 .tags {
     display: none;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
