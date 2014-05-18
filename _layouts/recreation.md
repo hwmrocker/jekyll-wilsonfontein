@@ -34,11 +34,17 @@ trans:
 
     p_2:
         de: Wir bieten Ihnen zwei sehr schöne Zweibett Zimmer mit einem eigenen Waffenschrank, einer eigenen Dusche und Toilette.
+        en: ""
+        fr: ""
     p_3:
         de: Neben der Möglichkeit sich ins Zimmer zurückzuziehen, kann man auch auf der Terrasse lesen und den Sonnenuntergang bewundern. Es gibt auch einen schönen Grillplatz an dem man Abends zusammen sitzen, sich am Lagerfeuer unterhalten und die Sterne genießen kann.
+        en: ""
+        fr: ""
 
     p_4:
         de: Auch für das leibliche Wohl ist gesorgt. Unsere Köchin Frederika zaubert jeden Tag etwas schmack- und nahrhaftes auf den Tisch. Sie versteht es sehr gut, das auf der Farm erlegte (Bio) Wild, abwechslungsreich und immer köstlich zuzubereiten.
+        en: ""
+        fr: ""
 ---
 
 {{ page.trans.h_1[page.lang]}}

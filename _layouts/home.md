@@ -16,8 +16,8 @@ links:
 
 
 picinfo:
-    fr: Flowering Aloes front of the Hottentotten church.
-    en: Flowering Aloes front of the Hottentotten church.
+    fr: Flowering Aloes in front of the Hottentotten church.
+    en: Flowering Aloes in front of the Hottentotten church.
     de: Blühende Aloes vor der Hottentottenkirche.
 ---
 

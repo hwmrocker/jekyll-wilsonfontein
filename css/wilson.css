@@ -119,8 +119,12 @@ body > .container {
 
 .contact-spacer {
   display: block;
-  padding-left: 2em;
+  padding-left: 20px;
 }
 .contact-spacer-glyph {
-  width: 2em;
+  width: 20px;
 } 
+
+.hidden {
+  display: none;
+}
