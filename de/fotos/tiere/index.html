@@ -1,0 +1,16 @@
+---
+categories: [de, fotos , tiere]
+lang: de
+layout: default
+navname: photos
+h1: fotos
+p1: tiere
+---
+{% assign o = site.tags.hideme[0] %}
+
+{% for pico in o.pics %}
+    {% assign post = pico[1] %}
+    {% assign pid = post.pid %}
+    {% assign album_path = '/de/fotos/tiere/' %}
+    {% if post.categories contains 'animals' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
+{% endfor %}

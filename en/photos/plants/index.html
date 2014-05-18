@@ -1,0 +1,16 @@
+---
+categories: [en, photos , plants]
+lang: en
+layout: default
+navname: photos
+h1: photos
+p1: plants
+---
+{% assign o = site.tags.hideme[0] %}
+
+{% for pico in o.pics %}
+    {% assign post = pico[1] %}
+    {% assign pid = post.pid %}
+    {% assign album_path = '/en/photos/plants/' %}
+    {% if post.categories contains 'plants' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
+{% endfor %}
