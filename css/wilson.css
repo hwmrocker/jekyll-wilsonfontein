@@ -116,3 +116,11 @@ body > .container {
 .dropdown-split > a.bar {
     padding-left: 5px;
 }
+
+.contact-spacer {
+  display: block;
+  padding-left: 2em;
+}
+.contact-spacer-glyph {
+  width: 2em;
+} 
