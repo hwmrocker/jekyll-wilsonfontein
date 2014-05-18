@@ -55,30 +55,48 @@ trans:
         en: Tel
         fr: Tél
         de: Tel
+    fax:
+        en: Fax
+        fr: Fax
+        de: Fax
 ---
 
 ###{{page.trans.h_namibia[page.lang]}}:
-
+<!-- 
 Ingo Gladis<br>
 P.O. Box 40<br>
-Karibib
+Karibib -->
+<address class="vcard">
+  <span class="fn">Ingo Gladis</span><br>
+  <span class="adr">
+    <span class="street-address">P.O. Box 40</span><br>
+    <span class="locality">Karibib</span><br>
+    <span class="country-name">Namibia</span>
+  </span><br><br>
+  <!-- <span class="tel-home-description">{{page.trans.tel[page.lang]}}:</span><span class="tel home">+264 (0) 64 - 55 08 90</span> <br>-->
+  <span class="tel-home-description">{{page.trans.cell[page.lang]}}:</span><span class="tel cell">+264 (0) 81 - 3003 857</span><br>
+</address>
 
-{{page.trans.tel[page.lang]}}: +264 (0) 64 - 55 08 90
 
-{{page.trans.cell[page.lang]}}: +264 (0) 81 - 3003 857
+
 
 ###{{page.trans.h_germany[page.lang]}}:
-
+<!-- 
 Ingo Gladis<br>
 Fasanstr. 18 <br>
-84539 Ampfing
-
-{{page.trans.tel[page.lang]}}: +49 (0) 8636 - 98 60 30
-
-Fax: +49 (0) 8636 - 98 60 31
-
-{{page.trans.cell[page.lang]}}: +49 (0) 176 - 38 80 30 80
-
+84539 Ampfing -->
+<address class="vcard">
+  <span class="fn">Ingo Gladis</span><br>
+  <span class="adr">
+    <span class="street-address">Fasanstr. 18</span><br>
+    <span class="postal-code">D-85439</span>
+    <span class="locality">Ampfing</span><br>
+    <span class="country-name">Deutschland</span>
+  </span><br><br>
+  <span class="tel-home-description">{{page.trans.tel[page.lang]}}:</span><span class="tel home">+49 (0) 8636 - 98 60 30</span><br>
+  <span class="tel-fax-description">{{page.trans.fax[page.lang]}}:</span><span class="tel fax">+49 (0) 8636 - 98 60 31</span><br>
+  <span class="tel-cell-description">{{page.trans.cell[page.lang]}}:</span><span class="tel cell">+49 (0) 176 - 38 80 30 80</span><br>
+</address>
 
 
 ### {{page.trans.h_email[page.lang]}}

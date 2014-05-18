@@ -12,23 +12,24 @@
 {% if title2 == "" or title2 == null %}
  {% assign title2 = pic2.title %}
 {% endif %}
-
-<div class="col-6">
-    <img src="{{ site.url }}/img/bigthumbs/{{ pic.url }}" class="img-thumbnail  center img-responsive"/><br>
-</div>
-<div class="col-6">
-    <img src="{{ site.url }}/img/bigthumbs/{{ pic2.url }}" class="img-thumbnail  center img-responsive"/><br>
-</div>
-<div class="col-6">
-    <div class="col-10 col-lg-6 center clearfix caption">
-        <span class="photographer">© {{ pic.author }}</span> -
-        <span class="title">{{ title }}</span>
+<div class="container">
+    <div class="col-xs-12 col-md-6">
+        <img src="{{ site.url }}/img/bigthumbs/{{ pic.url }}" class="img-thumbnail  center img-responsive"/><br>
+        <div class="col-md-10 center clearfix caption">
+            <span class="photographer">© {{ pic.author }}</span> -
+            <span class="title">{{ title }}</span>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <img src="{{ site.url }}/img/bigthumbs/{{ pic2.url }}" class="img-thumbnail  center img-responsive"/><br>
+        <div class="col-md-10 center clearfix caption">
+            <span class="photographer">© {{ pic2.author }}</span> -
+            <span class="title">{{ title2 }}</span>
+        </div>
     </div>
 </div>
+<!--<div class="col-6">
+</div>
 
 <div class="col-6">
-    <div class="col-10 col-lg-6 center clearfix caption">
-        <span class="photographer">© {{ pic2.author }}</span> -
-        <span class="title">{{ title2 }}</span>
-    </div>
-</div>
+</div> -->

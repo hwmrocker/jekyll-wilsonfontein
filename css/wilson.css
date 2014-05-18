@@ -19,11 +19,11 @@ body {
   background: #d0c4b6 url('/img/pics/noise.png');
 }
 
-h1.big {
+h1 {
     font-size: 45px;
     text-indent: 20px;
-    border-bottom: 1px dotted;
-    margin-bottom: 30px;
+    /*border-bottom: 1px dotted;*/
+    /*margin-bottom: 30px;*/
 }
 
 .center {

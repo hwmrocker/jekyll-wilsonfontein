@@ -1,6 +1,6 @@
 ---
 langs: ['en', 'de', 'fr']
-navbar:
+navbar-permanent:
   home:
     de:
         url: /de/index.html
@@ -41,6 +41,7 @@ navbar:
     fr:
         url: /fr/detente.html
         name: Détente
+navbar:
   photos:
     de:
         url: /de/fotos/
@@ -81,6 +82,7 @@ navbar:
     fr:
         url: /fr/hommage.html
         name: Hommage
+footer:
   imprint:
     de:
         url: /de/impressum.html
@@ -149,7 +151,7 @@ navbar:
       </div>
     </div> -->
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default " role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -159,6 +161,13 @@ navbar:
             <span class="icon-bar"></span>
           </button>
           <!-- <a class="navbar-brand" href="#">Project name</a> -->
+        </div>
+        <div class="navbar-header">
+          <ul class="nav navbar-nav">
+            {% for navitem in page.navbar-permanent %}
+              <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
+            {% endfor %}
+          </ul>
         </div>
 
         <div class="collapse navbar-collapse">
@@ -170,6 +179,14 @@ navbar:
             {% for navitem in page.navbar %}
               <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
             {% endfor %}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{page.lang}} <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                {% for lang in page.langs %}
+                  <li><a href="{{ site.url }}{{ page.navbar[page.navname][lang].url }}" class="{{ lang }}">{{ lang }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
             <li class="dropdown dropdown-split">
               <a href="#" class="foo">Dropdown</a><a href="#" class="dropdown-toggle bar" data-toggle="dropdown"><b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -189,18 +206,30 @@ navbar:
       </div>
     </div>
 
+<!--     <div class="row">
+        <div class="col-12 col-lg-8 col-offset-2">
+        </div>
+    </div> -->
+
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
-        <h1>Sticky footer with fixed navbar</h1>
+        <h1>{{ page.h1 | capitalize}}{% if page.p1 %} <small>{{ page.p1 | capitalize}}</small>{% endif %}</h1>
+        <!-- <h1>Sticky footer with fixed navbar</h1> -->
       </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+      {{ content | markdownify }}
+      <!-- <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p> -->
+      <!-- <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p> -->
     </div>
     <!-- End page content -->
     <div id="footer">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted">
+          {% for navitem in page.footer %}
+            <a href="{{site.url}}{{navitem[1][page.lang].url}}" class="footerlink{% if navitem[0] == page.navname %} active{% endif %}">{{navitem[1][page.lang].name}}</a>
+          {% endfor %}
+          <span class="pull-right">&copy; Olaf 2014</span>
+        </p>
       </div>
     </div>
 
