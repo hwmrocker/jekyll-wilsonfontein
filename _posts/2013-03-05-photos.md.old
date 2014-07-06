@@ -11,6 +11,15 @@ pics:
     tags: [Klippspringer, Wilsonfontein]
     title: Klipspringer
     url: klippspringer.jpg
+  P0000002:
+    author: Ingo Gladis
+    categories: [all, action]
+    date: '2010-07-09'
+    hiddentags: [cloudless, del time, offroad action, offroad cars, plane, rock]
+    pid: P0000002
+    tags: [Hottentotten Church]
+    title: double_cap+kirche
+    url: double_cap+kirche.jpg
   P0000004:
     author: Ingo Gladis
     categories: [all, action]
@@ -92,6 +101,15 @@ pics:
     tags: [Zebra Stripes]
     title: zebra_bad1
     url: zebra_bad1.jpg
+  P0000013:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-07-19'
+    hiddentags: [cloudless, people, rocks]
+    pid: P0000013
+    tags: []
+    title: nadab_klippen
+    url: nadab_klippen.jpg
   P0000014:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -101,6 +119,15 @@ pics:
     tags: [Dead Springbock, Scut]
     title: springbock
     url: springbock.jpg
+  P0000015:
+    author: Ingo Gladis
+    categories: [all, landscape, recreation]
+    date: '2010-07-21'
+    hiddentags: [cloudy, del time, fountain, water]
+    pid: P0000015
+    tags: []
+    title: quelle
+    url: quelle.jpg
   P0000016:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -128,6 +155,15 @@ pics:
     tags: [Actions, Green Grass, Warthogs]
     title: warzenschweine
     url: warzenschweine.jpg
+  P0000019:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-07-25'
+    hiddentags: [cloudless, del time, revier]
+    pid: P0000019
+    tags: []
+    title: twyfelfontein
+    url: twyfelfontein.jpg
   P0000020:
     author: Ingo Gladis
     categories: [all, plants]
@@ -137,6 +173,15 @@ pics:
     tags: [Bank, Moringa]
     title: bank
     url: bank.jpg
+  P0000021:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2010-07-27'
+    hiddentags: [cloudless, del time, hunter, people, rifle]
+    pid: P0000021
+    tags: [Blood, Dead Springbock, Grass, Ingo]
+    title: 2006_(1939)
+    url: 2006_(1939).JPG
   P0000022:
     author: Ingo Gladis
     categories: [all, animals]
@@ -146,6 +191,15 @@ pics:
     tags: [Green Grass, Ostrich]
     title: strauss2
     url: strauss2.jpg
+  P0000023:
+    author: Ingo Gladis
+    categories: [all, recreation]
+    date: '2010-07-29'
+    hiddentags: [car, cave, del time, eating lunch, people]
+    pid: P0000023
+    tags: []
+    title: mittagrast
+    url: mittagrast.jpg
   P0000024:
     author: Ingo Gladis
     categories: [all, animals, plants]
@@ -155,6 +209,33 @@ pics:
     tags: [Dead Tree]
     title: Bird_watching
     url: Bird_watching.jpg
+  P0000025:
+    author: Ingo Gladis
+    categories: [all, landscape, plants]
+    date: '2010-07-31'
+    hiddentags: [cloudless, del time, mountain, plane, rocks, valley]
+    pid: P0000025
+    tags: [Trees]
+    title: bergpad
+    url: bergpad.jpg
+  P0000026:
+    author: Ingo Gladis
+    categories: [all, recreation]
+    date: '2010-08-01'
+    hiddentags: [del time, hand, rock painting]
+    pid: P0000026
+    tags: []
+    title: weissehand
+    url: weissehand.jpg
+  P0000027:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-08-02'
+    hiddentags: [del time, rocks]
+    pid: P0000027
+    tags: []
+    title: an_hausdamm_mauer
+    url: an_hausdamm_mauer.jpg
   P0000028:
     author: Ingo Gladis
     categories: [all, landscape, animals]
@@ -164,6 +245,15 @@ pics:
     tags: [Horses]
     title: pferde_auf_bergpass
     url: pferde_auf_bergpass.jpg
+  P0000029:
+    author: Ingo Gladis
+    categories: [all, recreation]
+    date: '2010-08-04'
+    hiddentags: [del time, hands, rock painting]
+    pid: P0000029
+    tags: []
+    title: weisse_haende
+    url: weisse_haende.jpg
   P0000030:
     author: Ingo Gladis
     categories: [all, action]
@@ -236,6 +326,15 @@ pics:
     tags: [Bush]
     title: theresia_oben
     url: theresia_oben.jpg
+  P0000038:
+    author: Ingo Gladis
+    categories: [all, action]
+    date: '2010-08-13'
+    hiddentags: [cloudy, del time, mountain, offroad car, people, road]
+    pid: P0000038
+    tags: [Green Grass]
+    title: gras_cowboyflaeche
+    url: gras_cowboyflaeche.jpg
   P0000039:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -263,6 +362,25 @@ pics:
     tags: [Green Grass, Ingo, Willys]
     title: dune_ride
     url: dune_ride.jpg
+  P0000042:
+    author: Ingo Gladis
+    categories: [all, action, hunting]
+    date: '2010-08-17'
+    hiddentags: [cloudless, hunter, rifle]
+    pid: P0000042
+    tags: [Dead Springbock, Green Grass]
+    title: Christian_2.Springbock_3
+    url: Christian_2.Springbock_3.JPG
+  P0000043:
+    author: Ingo Gladis
+    categories: [all, action]
+    date: '2010-08-18'
+    hiddentags: [cloudless, del time, heavy road, offroad action, offroad car, people,
+      rocks]
+    pid: P0000043
+    tags: []
+    title: 4x4_2
+    url: 4x4_2.jpg
   P0000044:
     author: Ingo Gladis
     categories: [all, animals]
@@ -272,6 +390,15 @@ pics:
     tags: [Ostriches]
     title: 10_Strausse
     url: 10_Strausse.jpg
+  P0000045:
+    author: Ingo Gladis
+    categories: [all, recreation]
+    date: '2010-08-20'
+    hiddentags: [guitar, people, singing]
+    pid: P0000045
+    tags: [Feigenbaum]
+    title: Shawn_and_Roylee
+    url: Shawn_and_Roylee.jpg
   P0000046:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -317,6 +444,15 @@ pics:
     tags: [Dead Steinbock]
     title: steinbock
     url: steinbock.jpg
+  P0000051:
+    author: Ingo Gladis
+    categories: [all, landscape, plants]
+    date: '2010-08-26'
+    hiddentags: [cloudless, revier, sunset]
+    pid: P0000051
+    tags: [Bishop Cap, Grass, Trees]
+    title: Bischhoffshut_Sunset
+    url: Bischhoffshut_Sunset.jpg
   P0000052:
     author: Ingo Gladis
     categories: [all, animals, landscape]
@@ -326,6 +462,15 @@ pics:
     tags: [Giraffes, Trees]
     title: giraffen8
     url: giraffen8.jpg
+  P0000053:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-08-28'
+    hiddentags: [del time, mountains, nice clouds, sunset]
+    pid: P0000053
+    tags: []
+    title: sonnenuntergang_bei_teufelsschlucht
+    url: sonnenuntergang_bei_teufelsschlucht.jpg
   P0000054:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -389,6 +534,22 @@ pics:
     tags: [Giraffe]
     title: giraffe_sunset
     url: giraffe_sunset.jpg
+  P0000061:
+    author: Ingo Gladis
+    date: '2010-09-05'
+    hiddentags: [del time, people, revier]
+    pid: P0000061
+    tags: []
+    title: trip
+    url: trip.jpg
+  P0000062:
+    author: Ingo Gladis
+    date: '2010-09-06'
+    hiddentags: [cloudless, del time, rocks]
+    pid: P0000062
+    tags: []
+    title: klippspringerplatz
+    url: klippspringerplatz.jpg
   P0000063:
     author: Ingo Gladis
     date: '2010-09-07'
@@ -406,6 +567,22 @@ pics:
     tags: [Rooikuiseb, Tree]
     title: rooik_bei_zeichnung
     url: rooik_bei_zeichnung.jpg
+  P0000065:
+    author: Ingo Gladis
+    date: '2010-09-09'
+    hiddentags: [del time, people, person, sunset]
+    pid: P0000065
+    tags: []
+    title: sonnenuntergang
+    url: sonnenuntergang.jpg
+  P0000066:
+    author: Ingo Gladis
+    date: '2010-09-10'
+    hiddentags: [cloudless, del time, heavy road, offroad car, people, rocks, sand]
+    pid: P0000066
+    tags: []
+    title: car_up
+    url: car_up.jpg
   P0000067:
     author: Ingo Gladis
     date: '2010-09-11'
@@ -449,6 +626,31 @@ pics:
     tags: [Chelly, Sohni]
     title: Waterfall_Lunch
     url: Waterfall_Lunch.jpg
+  P0000072:
+    author: Ingo Gladis
+    date: '2010-09-16'
+    hiddentags: [cloudless, offroad car, offroad cars, rock]
+    pid: P0000072
+    tags: []
+    title: Hoch_bei_Twyfelfontein
+    url: Hoch_bei_Twyfelfontein.jpg
+  P0000073:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-09-17'
+    hiddentags: [cloudless, mountains, plain]
+    pid: P0000073
+    tags: [Grass]
+    title: gustavflaeche
+    url: gustavflaeche.jpg
+  P0000074:
+    author: Ingo Gladis
+    date: '2010-09-18'
+    hiddentags: [fountain, heavy road, nice clouds, people, rocks, water]
+    pid: P0000074
+    tags: []
+    title: bei_achas
+    url: bei_achas.jpg
   P0000075:
     author: Ingo Gladis
     date: '2010-09-19'
@@ -536,6 +738,15 @@ pics:
     tags: [Blood, Dead Steinbock]
     title: 2006_(1677)
     url: 2006_(1677).JPG
+  P0000085:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-09-29'
+    hiddentags: [cloudy, fountain, revier, rocks]
+    pid: P0000085
+    tags: []
+    title: gleich_bei_zeichnung
+    url: gleich_bei_zeichnung.jpg
   P0000086:
     author: Ingo Gladis
     categories: [all, recreation]
@@ -563,6 +774,47 @@ pics:
     tags: [Tree]
     title: oben_hinter_klippenbar
     url: oben_hinter_klippenbar.jpg
+  P0000089:
+    author: Ingo Gladis
+    date: '2010-10-03'
+    hiddentags: [hand, rock painting]
+    pid: P0000089
+    tags: []
+    title: "wei\xDFehand"
+    url: "wei\xDFehand.jpg"
+  P0000090:
+    author: Ingo Gladis
+    date: '2010-10-04'
+    hiddentags: [hole]
+    pid: P0000090
+    tags: []
+    title: loch
+    url: loch.jpg
+  P0000091:
+    author: Ingo Gladis
+    date: '2010-10-05'
+    hiddentags: [cloudless, people, revier, rocks, valley]
+    pid: P0000091
+    tags: [Trees]
+    title: aussicht
+    url: aussicht.jpg
+  P0000092:
+    author: Ingo Gladis
+    categories: [all, plants]
+    date: '2010-10-06'
+    hiddentags: [bird nest, cloudless, revier]
+    pid: P0000092
+    tags: [Trees]
+    title: basterkameldorn
+    url: basterkameldorn.jpg
+  P0000093:
+    author: Ingo Gladis
+    date: '2010-10-07'
+    hiddentags: [painting]
+    pid: P0000093
+    tags: [Leopard]
+    title: leopardenzimmer
+    url: leopardenzimmer.jpg
   P0000094:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -590,6 +842,15 @@ pics:
     tags: [Dead Zebra, Hottentotten Church]
     title: zebra2
     url: zebra2.jpg
+  P0000097:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2010-10-11'
+    hiddentags: [cloudless, hunter]
+    pid: P0000097
+    tags: [Dead Springbock, Grass]
+    title: stahlhelm_springbock
+    url: stahlhelm_springbock.jpg
   P0000098:
     author: Ingo Gladis
     categories: [all, landscape, plants]
@@ -643,6 +904,15 @@ pics:
     tags: [Dead Springbock]
     title: springbock_mani
     url: springbock_mani.jpg
+  P0000104:
+    author: Ingo Gladis
+    categories: [all, action]
+    date: '2010-10-18'
+    hiddentags: [cloudless, heavy road, man, offroad action, offroad car, rocks]
+    pid: P0000104
+    tags: []
+    title: 4x4
+    url: 4x4.jpg
   P0000105:
     author: Ingo Gladis
     date: '2010-10-19'
@@ -721,6 +991,49 @@ pics:
     tags: [Bush, Hottentotten Church]
     title: hottentotten_kirche
     url: hottentotten_kirche.jpg
+  P0000114:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-10-28'
+    hiddentags: [revier, rock]
+    pid: P0000114
+    tags: []
+    title: gegenueber_klippenbar
+    url: gegenueber_klippenbar.jpg
+  P0000115:
+    author: Ingo Gladis
+    date: '2010-10-29'
+    hiddentags: [cloudless, revier, sunset]
+    pid: P0000115
+    tags: []
+    title: kameldornbaum
+    url: kameldornbaum.jpg
+  P0000116:
+    author: Ingo Gladis
+    categories: [all, landscape, plants]
+    date: '2010-10-30'
+    hiddentags: [mountain, nice clouds, sandy road]
+    pid: P0000116
+    tags: [Tree]
+    title: kurve_bei_bank
+    url: kurve_bei_bank.jpg
+  P0000117:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2010-10-31'
+    hiddentags: [hunter, mountain, nice clouds, rifle]
+    pid: P0000117
+    tags: [Dead Springbock, Green Grass]
+    title: Christian_1.Springbock_1
+    url: Christian_1.Springbock_1.JPG
+  P0000118:
+    author: Ingo Gladis
+    date: '2010-11-01'
+    hiddentags: [cloudless, mountain, offroad cars, people, plain]
+    pid: P0000118
+    tags: []
+    title: pass
+    url: pass.jpg
   P0000119:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -739,6 +1052,24 @@ pics:
     tags: [Flaschenbaum]
     title: alter_baum
     url: alter_baum.jpg
+  P0000121:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2010-11-04'
+    hiddentags: [cloudless, mountain, rocks]
+    pid: P0000121
+    tags: [Dead Springbock]
+    title: klaras_springbock
+    url: klaras_springbock.jpg
+  P0000122:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-11-05'
+    hiddentags: [cloudy, mountain, revier]
+    pid: P0000122
+    tags: []
+    title: rooikuiseb_revier
+    url: rooikuiseb_revier.jpg
   P0000123:
     author: Ingo Gladis
     categories: [all, animals, landscape]
@@ -766,6 +1097,24 @@ pics:
     tags: [Dogs]
     title: hunde_himmel
     url: hunde_himmel.jpg
+  P0000126:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-11-09'
+    hiddentags: [mountain, nice clouds, plane]
+    pid: P0000126
+    tags: []
+    title: regen_bei_feigenbaum
+    url: regen_bei_feigenbaum.jpg
+  P0000127:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-11-10'
+    hiddentags: [cloudless, plane]
+    pid: P0000127
+    tags: [Hottentotten Church]
+    title: flaechekirche
+    url: flaechekirche.jpg
   P0000128:
     author: Ingo Gladis
     date: '2010-11-11'
@@ -774,6 +1123,15 @@ pics:
     tags: [Ponytail Palm]
     title: Elefantenfu
     url: "Elefantenfu\xDF.jpg"
+  P0000129:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2010-11-12'
+    hiddentags: [rocks]
+    pid: P0000129
+    tags: [Dead Springbock]
+    title: kurzes_horn
+    url: kurzes_horn.jpg
   P0000130:
     author: Ingo Gladis
     date: '2010-11-13'
@@ -845,6 +1203,14 @@ pics:
     tags: [Giraffe, Grass, Tree]
     title: giraffe
     url: giraffe.jpg
+  P0000138:
+    author: Ingo Gladis
+    date: '2010-11-21'
+    hiddentags: [nice shot, people, swimming, water]
+    pid: P0000138
+    tags: []
+    title: stahlhelmdamm
+    url: stahlhelmdamm.jpg
   P0000139:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -854,6 +1220,24 @@ pics:
     tags: [Dead Springbock, Grass, Olaf]
     title: 2006_(2181)
     url: 2006_(2181).JPG
+  P0000140:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-11-23'
+    hiddentags: [cloudless, mountain, plane]
+    pid: P0000140
+    tags: []
+    title: Sicht_aus_Topfbrennerei
+    url: Sicht_aus_Topfbrennerei.jpg
+  P0000141:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-11-24'
+    hiddentags: [cloudless, desert, mountain, plain]
+    pid: P0000141
+    tags: []
+    title: Pfote_zum_Vlei
+    url: Pfote_zum_Vlei.jpg
   P0000142:
     author: Ingo Gladis
     date: '2010-11-25'
@@ -862,6 +1246,14 @@ pics:
     tags: [Grass]
     title: auf_der_suche
     url: auf_der_suche.jpg
+  P0000143:
+    author: Ingo Gladis
+    date: '2010-11-26'
+    hiddentags: [desert, mountain, nice clouds, offroad car, people]
+    pid: P0000143
+    tags: []
+    title: kakteen
+    url: kakteen.jpg
   P0000144:
     author: Ingo Gladis
     categories: [all, plants]
@@ -871,6 +1263,14 @@ pics:
     tags: [Euphorbia, Prickly Pear, Tree]
     title: euphorbia_bluete
     url: euphorbia_bluete.jpg
+  P0000145:
+    author: Ingo Gladis
+    date: '2010-11-28'
+    hiddentags: [car, caves, cloudless, plane, rock]
+    pid: P0000145
+    tags: []
+    title: heljo_pondok_1
+    url: heljo_pondok_1.jpg
   P0000146:
     author: Ingo Gladis
     categories: [all, animals, landscape]
@@ -888,6 +1288,14 @@ pics:
     tags: [5 Spots, Hunting Luck, Kudu]
     title: bushmans_zeichnung2
     url: bushmans_zeichnung2.jpg
+  P0000148:
+    author: Ingo Gladis
+    date: '2010-12-01'
+    hiddentags: [archeology, pots]
+    pid: P0000148
+    tags: []
+    title: toepfe
+    url: toepfe.jpg
   P0000149:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -905,6 +1313,23 @@ pics:
     tags: [Badewanne, Trees]
     title: badewanne_camp
     url: badewanne_camp.jpg
+  P0000151:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2010-12-04'
+    hiddentags: [cloudless, mountain, plain, sun]
+    pid: P0000151
+    tags: [Hottentotten Church]
+    title: kirche+vlakte
+    url: kirche+vlakte.jpg
+  P0000152:
+    author: Ingo Gladis
+    date: '2010-12-05'
+    hiddentags: [broken car, cloudless, heavy road, offroad cars, people, plain, rocks]
+    pid: P0000152
+    tags: []
+    title: Heavy_Road_up
+    url: Heavy_Road_up.jpg
   P0000153:
     author: Ingo Gladis
     date: '2010-12-06'
@@ -1038,6 +1463,15 @@ pics:
     tags: [Cactus Flower]
     title: regenkaktus
     url: regenkaktus.jpg
+  P0000168:
+    author: Ingo Gladis
+    date: '2010-12-21'
+    hiddentags: [arch, cave, cloudless, mountain, offroad cars, people, plain, rocks,
+      sun set, sunset]
+    pid: P0000168
+    tags: []
+    title: Bushmvillage_View
+    url: Bushmvillage_View.jpg
   P0000169:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1056,6 +1490,14 @@ pics:
     tags: [Dead Springbock, Kai]
     title: springbock2
     url: springbock2.jpg
+  P0000171:
+    author: Ingo Gladis
+    date: '2010-12-24'
+    hiddentags: [cloudless, heavy road, offroad car, people, rocks]
+    pid: P0000171
+    tags: []
+    title: heavy_pad
+    url: heavy_pad.jpg
   P0000172:
     author: Ingo Gladis
     date: '2010-12-25'
@@ -1081,6 +1523,14 @@ pics:
     tags: [Geigei, Green Grass, Willys]
     title: Waterfall_Geigei
     url: Waterfall_Geigei.jpg
+  P0000175:
+    author: Ingo Gladis
+    date: '2010-12-28'
+    hiddentags: [archeology, hole]
+    pid: P0000175
+    tags: []
+    title: loch2
+    url: loch2.jpg
   P0000176:
     author: Ingo Gladis
     date: '2010-12-29'
@@ -1124,6 +1574,23 @@ pics:
     tags: [Blood, Dead Steinbock]
     title: 2006_(1714)
     url: 2006_(1714).JPG
+  P0000181:
+    author: Ingo Gladis
+    date: '2011-01-03'
+    hiddentags: [rocks, smoker, sun set]
+    pid: P0000181
+    tags: []
+    title: camel_man
+    url: camel_man.jpg
+  P0000182:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-01-04'
+    hiddentags: [mountains, nice clouds, plain, rocks, sun]
+    pid: P0000182
+    tags: []
+    title: aussicht2
+    url: aussicht2.jpg
   P0000183:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1141,6 +1608,32 @@ pics:
     tags: [Feigenbaum]
     title: campen
     url: campen.jpeg
+  P0000185:
+    author: Ingo Gladis
+    categories: [all, landscape, plants]
+    date: '2011-01-07'
+    hiddentags: [cloudless, mountain, revier]
+    pid: P0000185
+    tags: [Tree]
+    title: weite
+    url: weite.jpg
+  P0000186:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-01-08'
+    hiddentags: [mountain, plain, road]
+    pid: P0000186
+    tags: [Grass]
+    title: cowboy
+    url: cowboy.jpg
+  P0000187:
+    author: Ingo Gladis
+    date: '2011-01-09'
+    hiddentags: [canyon]
+    pid: P0000187
+    tags: []
+    title: rooikuisebschlucht_2
+    url: rooikuisebschlucht_2.jpg
   P0000188:
     author: Ingo Gladis
     categories: [all, animals]
@@ -1150,6 +1643,14 @@ pics:
     tags: [Horses]
     title: pferde
     url: pferde.jpg
+  P0000189:
+    author: Ingo Gladis
+    date: '2011-01-11'
+    hiddentags: [cloudless, desert]
+    pid: P0000189
+    tags: []
+    title: von_pforte2
+    url: von_pforte2.jpg
   P0000190:
     author: Ingo Gladis
     categories: [all, landscape, plants]
@@ -1176,6 +1677,15 @@ pics:
     tags: ["K\xF6cherbaum"]
     title: Kokerbaum_5
     url: Kokerbaum_5.jpg
+  P0000193:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-01-15'
+    hiddentags: [cloudless, hunter, man]
+    pid: P0000193
+    tags: [Blood, Dead Springbock]
+    title: 2006_(1764)
+    url: 2006_(1764).JPG
   P0000194:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1185,6 +1695,15 @@ pics:
     tags: [Dead Springbock, Dogs, Ingo, Leeza, Maggy, Thilo]
     title: 2006_(2135)
     url: 2006_(2135).JPG
+  P0000195:
+    author: Ingo Gladis
+    categories: [all, animals]
+    date: '2011-01-17'
+    hiddentags: []
+    pid: P0000195
+    tags: [Leopard, Tree]
+    title: leopard
+    url: leopard.jpg
   P0000196:
     author: Ingo Gladis
     categories: [all, plants]
@@ -1202,9 +1721,19 @@ pics:
     pid: P0000197
     tags: [Aloe, Hottentotten Church]
     title: Hottentotten church
-    title_trans: {de: Hottentottenkirche, en: Hottentotten Church, fr: Hottentotten
-        Church}
     url: hottentottenkirche2.jpg
+    title_trans:
+        fr: Hottentotten Church
+        en: Hottentotten Church
+        de: Hottentottenkirche
+  P0000198:
+    author: Ingo Gladis
+    date: '2011-01-20'
+    hiddentags: [human, rock painting]
+    pid: P0000198
+    tags: []
+    title: mensch
+    url: mensch.jpg
   P0000199:
     author: Ingo Gladis
     date: '2011-01-21'
@@ -1276,6 +1805,14 @@ pics:
     tags: [Tree]
     title: Hinter_Kirche_Baum
     url: Hinter_Kirche_Baum.jpg
+  P0000207:
+    author: Ingo Gladis
+    date: '2011-01-29'
+    hiddentags: [canyon, people, revier]
+    pid: P0000207
+    tags: []
+    title: Schlucht_mooi
+    url: Schlucht_mooi.jpg
   P0000208:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1303,6 +1840,15 @@ pics:
     tags: [Bank, Grass, Moringa]
     title: bank2
     url: bank2.jpg
+  P0000211:
+    author: Ingo Gladis
+    categories: [all, animals, landscape]
+    date: '2011-02-02'
+    hiddentags: [cloudless, mountain, revier]
+    pid: P0000211
+    tags: [Oryx, Tree]
+    title: oryx
+    url: oryx.jpg
   P0000212:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -1312,6 +1858,31 @@ pics:
     tags: [Bank]
     title: bank_voll
     url: bank_voll.jpg
+  P0000213:
+    author: Ingo Gladis
+    date: '2011-02-04'
+    hiddentags: [car, cloudless, person, wind mill]
+    pid: P0000213
+    tags: []
+    title: pforte_windpomp
+    url: pforte_windpomp.jpg
+  P0000214:
+    author: Ingo Gladis
+    date: '2011-02-05'
+    hiddentags: [cloudy, mountain, people]
+    pid: P0000214
+    tags: []
+    title: rooimoer
+    url: rooimoer.jpg
+  P0000215:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-02-06'
+    hiddentags: [cloudless, mountain, road, rocks]
+    pid: P0000215
+    tags: [Grass]
+    title: farm_5
+    url: farm_5.jpg
   P0000216:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1348,6 +1919,15 @@ pics:
     tags: [Giraffes, Trees]
     title: giraffen3
     url: giraffen3.jpg
+  P0000220:
+    author: Ingo Gladis
+    categories: [all, animals]
+    date: '2011-02-11'
+    hiddentags: [night, rocks]
+    pid: P0000220
+    tags: [Leopard]
+    title: pauls_leopard
+    url: pauls_leopard.jpg
   P0000221:
     author: Ingo Gladis
     categories: [all, animals]
@@ -1357,6 +1937,166 @@ pics:
     tags: [Ingo, Purzel]
     title: bogenfels
     url: bogenfels.jpg
+  P0000222:
+    author: Ingo Gladis
+    date: '2011-02-13'
+    hiddentags: []
+    pid: P0000222
+    tags: []
+    title: DSC00772_2
+    url: DSC00772_2.JPG
+  P0000223:
+    author: Ingo Gladis
+    date: '2011-02-14'
+    hiddentags: []
+    pid: P0000223
+    tags: []
+    title: DSC00793
+    url: DSC00793.JPG
+  P0000224:
+    author: Ingo Gladis
+    date: '2011-02-15'
+    hiddentags: []
+    pid: P0000224
+    tags: []
+    title: DSC00801
+    url: DSC00801.JPG
+  P0000225:
+    author: Ingo Gladis
+    date: '2011-02-16'
+    hiddentags: []
+    pid: P0000225
+    tags: []
+    title: DSC00868
+    url: DSC00868.JPG
+  P0000226:
+    author: Ingo Gladis
+    date: '2011-02-17'
+    hiddentags: []
+    pid: P0000226
+    tags: []
+    title: IMG_2845
+    url: IMG_2845.JPG
+  P0000227:
+    author: Ingo Gladis
+    date: '2011-02-18'
+    hiddentags: []
+    pid: P0000227
+    tags: []
+    title: IMG_2937
+    url: IMG_2937.JPG
+  P0000228:
+    author: Ingo Gladis
+    date: '2011-02-19'
+    hiddentags: []
+    pid: P0000228
+    tags: []
+    title: IMG_2938
+    url: IMG_2938.JPG
+  P0000229:
+    author: Ingo Gladis
+    date: '2011-02-20'
+    hiddentags: []
+    pid: P0000229
+    tags: []
+    title: IMG_2939
+    url: IMG_2939.JPG
+  P0000230:
+    author: Ingo Gladis
+    date: '2011-02-21'
+    hiddentags: []
+    pid: P0000230
+    tags: []
+    title: IMG_2993
+    url: IMG_2993.JPG
+  P0000231:
+    author: Ingo Gladis
+    date: '2011-02-22'
+    hiddentags: []
+    pid: P0000231
+    tags: []
+    title: IMG_3099
+    url: IMG_3099.JPG
+  P0000232:
+    author: Ingo Gladis
+    date: '2011-02-23'
+    hiddentags: []
+    pid: P0000232
+    tags: []
+    title: IMG_3100
+    url: IMG_3100.JPG
+  P0000233:
+    author: Ingo Gladis
+    date: '2011-02-24'
+    hiddentags: []
+    pid: P0000233
+    tags: []
+    title: IMG_3127
+    url: IMG_3127.JPG
+  P0000234:
+    author: Ingo Gladis
+    date: '2011-02-25'
+    hiddentags: []
+    pid: P0000234
+    tags: []
+    title: IMG_3479
+    url: IMG_3479.JPG
+  P0000235:
+    author: Ingo Gladis
+    date: '2011-02-26'
+    hiddentags: []
+    pid: P0000235
+    tags: []
+    title: IMG_3530
+    url: IMG_3530.JPG
+  P0000236:
+    author: Ingo Gladis
+    date: '2011-02-27'
+    hiddentags: []
+    pid: P0000236
+    tags: []
+    title: IMG_3541
+    url: IMG_3541.JPG
+  P0000237:
+    author: Ingo Gladis
+    date: '2011-02-28'
+    hiddentags: []
+    pid: P0000237
+    tags: []
+    title: IMG_5346
+    url: IMG_5346.JPG
+  P0000238:
+    author: Ingo Gladis
+    date: '2011-03-01'
+    hiddentags: []
+    pid: P0000238
+    tags: []
+    title: IMG_5530
+    url: IMG_5530.JPG
+  P0000239:
+    author: Ingo Gladis
+    date: '2011-03-02'
+    hiddentags: []
+    pid: P0000239
+    tags: []
+    title: IMG_5582
+    url: IMG_5582.JPG
+  P0000240:
+    author: Ingo Gladis
+    date: '2011-03-03'
+    hiddentags: []
+    pid: P0000240
+    tags: []
+    title: IMG_6276
+    url: IMG_6276.JPG
+  P0000241:
+    author: Thilo Gladis
+    date: '2011-03-04'
+    hiddentags: []
+    pid: P0000241
+    tags: []
+    title: IMG_6292.1
+    url: IMG_6292.1.jpg
   P0000242:
     author: Udo Krappe
     categories: [all, plants]
@@ -1429,6 +2169,15 @@ pics:
     tags: [Erdferkel]
     title: DSCN2267
     url: DSCN2267.JPG
+  P0000250:
+    author: "Max N\xFCbel"
+    categories: [all, hunting]
+    date: '2011-03-13'
+    hiddentags: [binoculars, hunter, no clouds]
+    pid: P0000250
+    tags: []
+    title: DSC_0212
+    url: DSC_0212.JPG
   P0000251:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1447,6 +2196,14 @@ pics:
     tags: [Toyota (White)]
     title: DSC_0780
     url: DSC_0780.JPG
+  P0000253:
+    author: Olaf Gladis
+    date: '2011-03-16'
+    hiddentags: [postcard, sun, sunset]
+    pid: P0000253
+    tags: []
+    title: IMG_0205
+    url: IMG_0205.JPG
   P0000254:
     author: Olaf Gladis
     categories: [all, animals]
@@ -1510,6 +2267,24 @@ pics:
     tags: [Bishop Cap, Dead Oryx]
     title: DSCN3444
     url: DSCN3444.JPG
+  P0000261:
+    author: Olaf Gladis
+    categories: [all, hunting]
+    date: '2011-03-24'
+    hiddentags: [hunter, sneaking]
+    pid: P0000261
+    tags: []
+    title: IMG_1877
+    url: IMG_1877.JPG
+  P0000262:
+    author: "Max N\xFCbel"
+    categories: [all, hunting]
+    date: '2011-03-25'
+    hiddentags: [cloudless, hunter, sneaking, sunset]
+    pid: P0000262
+    tags: []
+    title: DSC_0345
+    url: DSC_0345.JPG
   P0000263:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1573,6 +2348,14 @@ pics:
     tags: [Stahlhelm]
     title: IMG_6889 Kopie
     url: IMG_6889 Kopie.jpg
+  P0000270:
+    author: Gisi Graser
+    date: '2011-04-02'
+    hiddentags: [cave, cloudless, mountain, offroad car]
+    pid: P0000270
+    tags: []
+    title: Farm m049
+    url: Farm m049.jpg
   P0000271:
     author: Olaf Gladis
     categories: [all, animals]
@@ -1591,6 +2374,15 @@ pics:
     tags: [Camelthorntree]
     title: DSC_0393
     url: DSC_0393.JPG
+  P0000273:
+    author: Ingo Gladis
+    categories: [all, landscape, plants]
+    date: '2011-04-05'
+    hiddentags: [mountains]
+    pid: P0000273
+    tags: [Tree]
+    title: DSC_0159
+    url: DSC_0159.jpg
   P0000274:
     author: Gisi Graser
     categories: [all, landscape, plants]
@@ -1600,6 +2392,15 @@ pics:
     tags: [Dead Tree, Green Grass, Zuckerhut, Zwillinge]
     title: Farm 1 schoene Photos 020
     url: Farm 1 schoene Photos 020.jpg
+  P0000275:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-04-07'
+    hiddentags: [wasserfall]
+    pid: P0000275
+    tags: []
+    title: DSC01404
+    url: DSC01404.JPG
   P0000276:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -1609,6 +2410,42 @@ pics:
     tags: [Gisela Mountain]
     title: DSCN3507
     url: DSCN3507.JPG
+  P0000277:
+    author: "Max N\xFCbel"
+    categories: [all, hunting]
+    date: '2011-04-09'
+    hiddentags: [blue sky, hunter, sneaking, sunset]
+    pid: P0000277
+    tags: []
+    title: DSC_0338
+    url: DSC_0338.JPG
+  P0000278:
+    author: "Max N\xFCbel"
+    categories: [all, hunting]
+    date: '2011-04-10'
+    hiddentags: [blue sky, mountain]
+    pid: P0000278
+    tags: [Dead Oryx]
+    title: DSC_0460
+    url: DSC_0460.JPG
+  P0000279:
+    author: Olaf Gladis
+    categories: [all, hunting]
+    date: '2011-04-11'
+    hiddentags: [hunter, sneaking]
+    pid: P0000279
+    tags: [Ingo]
+    title: IMG_1876
+    url: IMG_1876.JPG
+  P0000280:
+    author: "Max N\xFCbel"
+    categories: [all, landscape]
+    date: '2011-04-12'
+    hiddentags: [blue sky, cave]
+    pid: P0000280
+    tags: []
+    title: DSC_0357
+    url: DSC_0357.jpg
   P0000281:
     author: Richard Kreipl
     categories: [all, animals, hunting]
@@ -1618,6 +2455,15 @@ pics:
     tags: [Klippspringer]
     title: PIC01140
     url: PIC01140.JPG
+  P0000282:
+    author: Richard Kreipl
+    categories: [all, landscape]
+    date: '2011-04-14'
+    hiddentags: [plane]
+    pid: P0000282
+    tags: []
+    title: PIC01400
+    url: PIC01400.JPG
   P0000283:
     author: "Max N\xFCbel"
     categories: [all, hunting]
@@ -1663,6 +2509,104 @@ pics:
     tags: ["K\xF6cherbaum"]
     title: Jung und Alt
     url: IMG_3112.JPG
+  P0000288:
+    author: Ingo Gladis
+    date: '2011-04-20'
+    hiddentags: []
+    pid: P0000288
+    tags: []
+    title: Ingo
+    url: ingo.jpg
+  P0000289:
+    author: Gisi Graser
+    date: '2011-04-21'
+    hiddentags: []
+    pid: P0000289
+    tags: []
+    title: berthold
+    url: berthold.jpg
+  P0000290:
+    author: Ingo Gladis
+    date: '2011-04-22'
+    hiddentags: []
+    pid: P0000290
+    tags: []
+    title: udo
+    url: udo.jpg
+  P0000291:
+    author: Ingo Gladis
+    date: '2011-04-23'
+    hiddentags: []
+    pid: P0000291
+    tags: []
+    title: bullenklippe
+    url: bullenklippe.jpg
+  P0000292:
+    author: Ingo Gladis
+    date: '2011-04-24'
+    hiddentags: []
+    pid: P0000292
+    tags: []
+    title: sunrise
+    url: sunrise.jpg
+  P0000293:
+    author: Olaf Gladis
+    categories: [all, recreation]
+    date: '2011-04-25'
+    hiddentags: [essen]
+    pid: P0000293
+    tags: []
+    title: essen
+    url: essen.JPG
+  P0000294:
+    author: Gisi Graser
+    categories: [all, recreation]
+    date: '2011-04-26'
+    hiddentags: []
+    pid: P0000294
+    tags: []
+    title: esszimmer
+    url: esszimmer.jpg
+  P0000295:
+    author: Gisi Graser
+    date: '2011-04-27'
+    hiddentags: []
+    pid: P0000295
+    tags: []
+    title: die_crew
+    url: die_crew.JPG
+  P0000296:
+    author: Gisi Graser
+    date: '2011-04-28'
+    hiddentags: []
+    pid: P0000296
+    tags: []
+    title: esszimmer_2
+    url: esszimmer_2.JPG
+  P0000297:
+    author: Gisi Graser
+    date: '2011-04-29'
+    hiddentags: []
+    pid: P0000297
+    tags: []
+    title: terasse
+    url: terasse.JPG
+  P0000298:
+    author: Gisi Graser
+    date: '2011-04-30'
+    hiddentags: []
+    pid: P0000298
+    tags: []
+    title: grillplatz
+    url: grillplatz.JPG
+  P0000299:
+    author: Gisi Graser
+    date: '2011-05-01'
+    hiddentags: []
+    pid: P0000299
+    tags: []
+    title: lagerfeuer
+    url: lagerfeuer.jpg
   P0000300:
     author: Ingo Gladis
     date: '2011-05-02'
@@ -1671,6 +2615,23 @@ pics:
     tags: [Teufelschlucht]
     title: Devilsgorge entrance
     url: Teufelsschlucht_001.jpg
+  P0000301:
+    author: Tapio Hurmerinter
+    date: '2011-05-03'
+    hiddentags: []
+    pid: P0000301
+    tags: []
+    title: DSC00634
+    url: DSC00634.JPG
+  P0000302:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-05-04'
+    hiddentags: []
+    pid: P0000302
+    tags: [Blood, Dead Springbock]
+    title: DSC00666
+    url: DSC00666.JPG
   P0000303:
     author: Ingo Gladis
     date: '2011-05-05'
@@ -1679,6 +2640,15 @@ pics:
     tags: [Aleo Virosa, Kolibri]
     title: DSC_0836
     url: DSC_0836.JPG
+  P0000304:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-05-06'
+    hiddentags: []
+    pid: P0000304
+    tags: [Blood, Dead Springbock]
+    title: DSCF1260
+    url: DSCF1260.JPG
   P0000307:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -1706,6 +2676,15 @@ pics:
     tags: [Dead Steinbock]
     title: DSCN4356
     url: DSCN4356.JPG
+  P0000310:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-05-12'
+    hiddentags: [mountains, view]
+    pid: P0000310
+    tags: []
+    title: DSCN4362
+    url: DSCN4362.JPG
   P0000311:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1731,6 +2710,23 @@ pics:
     tags: [Toyota (White), Toyota (Yellow), Toyota Bus]
     title: DSCN4410
     url: DSCN4410.JPG
+  P0000314:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-05-16'
+    hiddentags: [cloudy, mountains, sunset]
+    pid: P0000314
+    tags: []
+    title: DSCN4448
+    url: DSCN4448.JPG
+  P0000315:
+    author: Ingo Gladis
+    date: '2011-05-17'
+    hiddentags: [cloudy, sunset]
+    pid: P0000315
+    tags: []
+    title: DSCN4452
+    url: DSCN4452.JPG
   P0000316:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1802,6 +2798,24 @@ pics:
     tags: [Dead Zebra, Hottentotten Church, Ingo, Simion]
     title: DSCN4564
     url: DSCN4564.JPG
+  P0000324:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-05-26'
+    hiddentags: [blue sky]
+    pid: P0000324
+    tags: [Dead Grass, Dead Oryx]
+    title: DSCN4566
+    url: DSCN4566.JPG
+  P0000325:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-05-27'
+    hiddentags: [blue sky]
+    pid: P0000325
+    tags: [Dead Springbock]
+    title: DSCN4573
+    url: DSCN4573.JPG
   P0000326:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -1820,6 +2834,15 @@ pics:
     tags: [Dead Klippspringer]
     title: DSCN4589
     url: DSCN4589.JPG
+  P0000328:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-05-30'
+    hiddentags: [blue sky]
+    pid: P0000328
+    tags: [Dead Grass, Dead Springbock]
+    title: DSCN4627
+    url: DSCN4627.JPG
   P0000329:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -2006,6 +3029,24 @@ pics:
     tags: [Fotofalle, Leopard]
     title: PICT0074
     url: PICT0074.JPG
+  P0000350:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-06-21'
+    hiddentags: [hunting spot]
+    pid: P0000350
+    tags: [Fotofalle, Leopard]
+    title: PICT0079
+    url: PICT0079.JPG
+  P0000351:
+    author: Ingo Gladis
+    categories: [all, spycam]
+    date: '2011-06-22'
+    hiddentags: [hunting spot]
+    pid: P0000351
+    tags: [Fotofalle, Hyena]
+    title: PICT0252
+    url: PICT0252.JPG
   P0000352:
     author: Ingo Gladis
     categories: [all, animals, landscape]
@@ -2042,6 +3083,15 @@ pics:
     tags: [Dead Grass, Elefantenberg]
     title: Tigan_Chelly_132
     url: Tigan_Chelly_132.jpg
+  P0000356:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-06-27'
+    hiddentags: [clouds, plane]
+    pid: P0000356
+    tags: [Dead Grass]
+    title: Tigan_Chelly_136
+    url: Tigan_Chelly_136.jpg
   P0000357:
     author: "J\xFCrgen Bender"
     categories: [all, plants]
@@ -2059,6 +3109,14 @@ pics:
     tags: [Bush]
     title: _MG_6101
     url: MG_6101.JPG
+  P0000359:
+    author: "J\xFCrgen Bender"
+    date: '2011-06-30'
+    hiddentags: [sniper rifle, sunset]
+    pid: P0000359
+    tags: [Ingo]
+    title: _MG_6290
+    url: MG_6290.JPG
   P0000360:
     author: "Philippe J\xE4ger"
     categories: [all, animals]
@@ -2068,6 +3126,14 @@ pics:
     tags: [Oryx]
     title: _PHI0584
     url: PHI0584.JPG
+  P0000361:
+    author: "Philippe J\xE4ger"
+    date: '2011-07-02'
+    hiddentags: [rocks, sunset]
+    pid: P0000361
+    tags: []
+    title: _PHI0589
+    url: PHI0589.JPG
   P0000362:
     author: "Philippe J\xE4ger"
     categories: [all, animals]
@@ -2086,6 +3152,15 @@ pics:
     tags: [Green Grass]
     title: CIMG0359
     url: CIMG0359.JPG
+  P0000364:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-07-05'
+    hiddentags: [blue sky, mountains, nice view, rocks]
+    pid: P0000364
+    tags: []
+    title: DSC_0049
+    url: DSC_0049.JPG
   P0000365:
     author: Ingo Gladis
     date: '2011-07-06'
@@ -2182,6 +3257,15 @@ pics:
     tags: [Feigenbaum]
     title: DSC01470
     url: DSC01470.JPG
+  P0000376:
+    author: Ingo Gladis
+    categories: [all, plants]
+    date: '2011-07-17'
+    hiddentags: [nice clouds, rocks]
+    pid: P0000376
+    tags: [Green Grass, Trees]
+    title: DSC01521
+    url: DSC01521.JPG
   P0000377:
     author: Ingo Gladis
     date: '2011-07-18'
@@ -2252,6 +3336,15 @@ pics:
     tags: [Feigenbaum]
     title: DSCN3747
     url: DSCN3747.JPG
+  P0000385:
+    author: Ingo Gladis
+    categories: [all, landscape]
+    date: '2011-07-26'
+    hiddentags: [blue sky, lake, nice clouds, rocks, wasserfall]
+    pid: P0000385
+    tags: [Green Grass]
+    title: DSCN3752
+    url: DSCN3752.JPG
   P0000386:
     author: Ingo Gladis
     categories: [all, landscape]
@@ -2294,6 +3387,15 @@ pics:
     tags: [Dead Lux]
     title: DSCN3827
     url: DSCN3827.JPG
+  P0000391:
+    author: Ingo Gladis
+    categories: [all, hunting]
+    date: '2011-08-01'
+    hiddentags: [blue sky]
+    pid: P0000391
+    tags: [Dead Oryx, Hottentotten Church]
+    title: DSCN3844
+    url: DSCN3844.JPG
   P0000392:
     author: Ingo Gladis
     categories: [all, hunting]
@@ -2384,6 +3486,14 @@ pics:
     tags: [Klippspringer]
     title: IMG_7362
     url: IMG_7362.JPG
+  P0000402:
+    author: Axel Wilms
+    date: '2011-08-12'
+    hiddentags: []
+    pid: P0000402
+    tags: []
+    title: IMG_7903
+    url: IMG_7903.JPG
   P0000403:
     author: "Philippe J\xE4ger"
     categories: [all, hunting]
@@ -2481,6 +3591,87 @@ pics:
     tags: [Fotofalle, Leopards]
     title: PICT0951
     url: PICT0951.JPG
+  P0000415:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-25'
+    hiddentags: [playing, sand]
+    pid: P0000415
+    tags: [Fotofalle, Leopard]
+    title: PICT0980
+    url: PICT0980.JPG
+  P0000416:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-26'
+    hiddentags: [hunting spot]
+    pid: P0000416
+    tags: [Fotofalle, Leopard]
+    title: MDGC0024
+    url: MDGC0024.JPG
+  P0000417:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-27'
+    hiddentags: []
+    pid: P0000417
+    tags: [Fotofalle, Leopard]
+    title: MDGC0098
+    url: MDGC0098.JPG
+  P0000418:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-28'
+    hiddentags: [eating]
+    pid: P0000418
+    tags: [Fotofalle, Leopard]
+    title: MDGC0138
+    url: MDGC0138.JPG
+  P0000419:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-29'
+    hiddentags: []
+    pid: P0000419
+    tags: [Fotofalle, Leopard]
+    title: MDGC0435
+    url: MDGC0435.JPG
+  P0000420:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-30'
+    hiddentags: []
+    pid: P0000420
+    tags: [Fotofalle, Leopard]
+    title: PICT0010
+    url: PICT0010.JPG
+  P0000421:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-08-31'
+    hiddentags: []
+    pid: P0000421
+    tags: [Fotofalle, Leopard]
+    title: PICT0023
+    url: PICT0023.JPG
+  P0000422:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-01'
+    hiddentags: [eating]
+    pid: P0000422
+    tags: [Fotofalle, Leopard]
+    title: PICT0035
+    url: PICT0035.JPG
+  P0000423:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-02'
+    hiddentags: [blurry]
+    pid: P0000423
+    tags: [Fotofalle, Leopard]
+    title: PICT0006
+    url: PICT0006.JPG
   P0000424:
     author: Ingo Gladis
     categories: [all, animals, spycam]
@@ -2517,6 +3708,15 @@ pics:
     tags: [Animal, Fotofalle, Stachelschwein]
     title: PICT0064_4
     url: PICT0064_4.JPG
+  P0000428:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-07'
+    hiddentags: []
+    pid: P0000428
+    tags: [Fotofalle, Leopard]
+    title: PICT0076
+    url: PICT0076.JPG
   P0000429:
     author: Ingo Gladis
     categories: [all, animals, spycam]
@@ -2526,6 +3726,42 @@ pics:
     tags: [Animal, Fotofalle, Hyenas]
     title: PICT0088
     url: PICT0088.JPG
+  P0000430:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-09'
+    hiddentags: []
+    pid: P0000430
+    tags: [Fotofalle, Leopard]
+    title: PICT0115
+    url: PICT0115.JPG
+  P0000431:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-10'
+    hiddentags: [playing]
+    pid: P0000431
+    tags: [Fotofalle, Leopard]
+    title: PICT0116
+    url: PICT0116.JPG
+  P0000432:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-11'
+    hiddentags: []
+    pid: P0000432
+    tags: [Fotofalle, Leopard]
+    title: PICT0219
+    url: PICT0219.JPG
+  P0000433:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-12'
+    hiddentags: []
+    pid: P0000433
+    tags: [Fotofalle, Leopard]
+    title: PICT0224
+    url: PICT0224.JPG
   P0000434:
     author: Ingo Gladis
     categories: [all, spycam]
@@ -2544,6 +3780,15 @@ pics:
     tags: [Fotofalle, Hyenas]
     title: PICT0315
     url: PICT0315.JPG
+  P0000436:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-15'
+    hiddentags: []
+    pid: P0000436
+    tags: [Fotofalle, Leopard]
+    title: PICT0414
+    url: PICT0414.JPG
   P0000437:
     author: Ingo Gladis
     categories: [all, spycam]
@@ -2553,6 +3798,42 @@ pics:
     tags: [Fotofalle, Hyena]
     title: PICT0421
     url: PICT0421.JPG
+  P0000438:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-17'
+    hiddentags: []
+    pid: P0000438
+    tags: [Fotofalle, Leopard]
+    title: PICT0477
+    url: PICT0477.JPG
+  P0000439:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-18'
+    hiddentags: [blurry]
+    pid: P0000439
+    tags: [Fotofalle, Leopard]
+    title: PICT0530
+    url: PICT0530.JPG
+  P0000440:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-19'
+    hiddentags: [blurry]
+    pid: P0000440
+    tags: [Fotofalle, Leopard]
+    title: PICT0536
+    url: PICT0536.JPG
+  P0000441:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-20'
+    hiddentags: [eating]
+    pid: P0000441
+    tags: [Fotofalle, Leopard]
+    title: PICT0795
+    url: PICT0795.JPG
   P0000442:
     author: Ingo Gladis
     categories: [all, spycam]
@@ -2607,6 +3888,60 @@ pics:
     tags: [Animal, Fotofalle, Paviane]
     title: MDGC0014
     url: MDGC0014.JPG
+  P0000448:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-27'
+    hiddentags: [eating]
+    pid: P0000448
+    tags: [Fotofalle, Leopard]
+    title: MDGC0022
+    url: MDGC0022.JPG
+  P0000449:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-28'
+    hiddentags: [eating]
+    pid: P0000449
+    tags: [Fotofalle, Leopard]
+    title: MDGC0028
+    url: MDGC0028.JPG
+  P0000450:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-29'
+    hiddentags: []
+    pid: P0000450
+    tags: [Fotofalle, Leopard]
+    title: MDGC0056
+    url: MDGC0056.JPG
+  P0000451:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-09-30'
+    hiddentags: []
+    pid: P0000451
+    tags: [Fotofalle, Leopard]
+    title: MDGC0061
+    url: MDGC0061.JPG
+  P0000452:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-01'
+    hiddentags: []
+    pid: P0000452
+    tags: [Fotofalle, Leopard]
+    title: MDGC0064
+    url: MDGC0064.JPG
+  P0000453:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-02'
+    hiddentags: []
+    pid: P0000453
+    tags: [Fotofalle, Leopard]
+    title: MDGC0073
+    url: MDGC0073.JPG
   P0000454:
     author: Ingo Gladis
     categories: [all, animals, spycam]
@@ -2625,6 +3960,33 @@ pics:
     tags: [Fotofalle, Leopards]
     title: MDGC0092
     url: MDGC0092.JPG
+  P0000456:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-05'
+    hiddentags: [sunrise]
+    pid: P0000456
+    tags: [Fotofalle, Leopard]
+    title: MDGC0100_2
+    url: MDGC0100_2.JPG
+  P0000457:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-06'
+    hiddentags: []
+    pid: P0000457
+    tags: [Fotofalle, Leopard]
+    title: MDGC0163
+    url: MDGC0163.JPG
+  P0000458:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-07'
+    hiddentags: []
+    pid: P0000458
+    tags: [Fotofalle, Leopard]
+    title: MDGC0199
+    url: MDGC0199.JPG
   P0000459:
     author: Ingo Gladis
     categories: [all, spycam]
@@ -2724,6 +4086,87 @@ pics:
     tags: [Animal, Fotofalle, Geier]
     title: PICT0008
     url: PICT0008.JPG
+  P0000470:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-19'
+    hiddentags: []
+    pid: P0000470
+    tags: [Fotofalle, Leopard]
+    title: PICT0011_1
+    url: PICT0011_1.JPG
+  P0000471:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-20'
+    hiddentags: []
+    pid: P0000471
+    tags: [Fotofalle, Leopard]
+    title: PICT0015
+    url: PICT0015.JPG
+  P0000472:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-21'
+    hiddentags: [running]
+    pid: P0000472
+    tags: [Fotofalle, Leopard]
+    title: PICT0016
+    url: PICT0016.JPG
+  P0000473:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-22'
+    hiddentags: [eating]
+    pid: P0000473
+    tags: [Fotofalle, Leopard]
+    title: PICT0018
+    url: PICT0018.JPG
+  P0000474:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-23'
+    hiddentags: []
+    pid: P0000474
+    tags: [Fotofalle, Leopard]
+    title: PICT0024
+    url: PICT0024.JPG
+  P0000475:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-24'
+    hiddentags: []
+    pid: P0000475
+    tags: [Fotofalle, Leopard]
+    title: PICT0029_1
+    url: PICT0029_1.JPG
+  P0000476:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-25'
+    hiddentags: [drinking]
+    pid: P0000476
+    tags: [Fotofalle, Leopard]
+    title: PICT0030
+    url: PICT0030.JPG
+  P0000477:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-26'
+    hiddentags: [blurry]
+    pid: P0000477
+    tags: [Fotofalle, Leopard]
+    title: PICT0034
+    url: PICT0034.JPG
+  P0000478:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-27'
+    hiddentags: []
+    pid: P0000478
+    tags: [Fotofalle, Leopard]
+    title: PICT0043
+    url: PICT0043.JPG
   P0000479:
     author: Ingo Gladis
     categories: [all, animals, spycam]
@@ -2733,6 +4176,24 @@ pics:
     tags: [Animal, Fotofalle, Rotneuichnomon]
     title: PICT0045
     url: PICT0045.JPG
+  P0000480:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-29'
+    hiddentags: [blurry]
+    pid: P0000480
+    tags: [Fotofalle, Leopard]
+    title: PICT0049
+    url: PICT0049.JPG
+  P0000481:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-10-30'
+    hiddentags: [blurry]
+    pid: P0000481
+    tags: [Fotofalle, Leopard]
+    title: PICT0061
+    url: PICT0061.JPG
   P0000482:
     author: Ingo Gladis
     categories: [all, animals, spycam]
@@ -2751,6 +4212,15 @@ pics:
     tags: [Fotofalle, Hyenas]
     title: PICT0068
     url: PICT0068.JPG
+  P0000484:
+    author: Ingo Gladis
+    categories: [all, spycam]
+    date: '2011-11-02'
+    hiddentags: []
+    pid: P0000484
+    tags: [Fotofalle, Hyena]
+    title: PICT0079_2
+    url: PICT0079_2.JPG
   P0000485:
     author: Ingo Gladis
     categories: [all, spycam]
@@ -2769,6 +4239,24 @@ pics:
     tags: [Fotofalle, Zebra]
     title: PICT0175
     url: PICT0175.JPG
+  P0000487:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-11-05'
+    hiddentags: []
+    pid: P0000487
+    tags: [Fotofalle, Leopard]
+    title: PICT0180
+    url: PICT0180.JPG
+  P0000488:
+    author: Ingo Gladis
+    categories: [all, animals, spycam]
+    date: '2011-11-06'
+    hiddentags: [eating]
+    pid: P0000488
+    tags: [Fotofalle, Leopard]
+    title: PICT0213
+    url: PICT0213.JPG
   P0000489:
     author: Ingo Gladis
     categories: [all, spycam]
@@ -2868,5 +4356,14 @@ pics:
     tags: [Fotofalle, Oryx]
     title: PICT0892
     url: PICT0892.JPG
+  P0000500:
+    author: Olaf Gladis
+    categories: [all, animals, spycam]
+    date: '2011-11-18'
+    hiddentags: []
+    pid: P0000500
+    tags: [Fotofalle, Leopard]
+    title: SUNP0002
+    url: SUNP0002.JPG
 tags: [hideme]
 ---
