@@ -1,0 +1,16 @@
+---
+categories: [de, fotos , erholung]
+lang: de
+layout: default
+navname: photos
+h1: fotos
+p1: erholung
+---
+{% assign o = site.tags.hideme[0] %}
+
+{% for pico in o.pics %}
+    {% assign post = pico[1] %}
+    {% assign pid = post.pid %}
+    {% assign album_path = '/de/fotos/erholung/' %}
+    {% if post.categories contains 'recreation' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
+{% endfor %}
