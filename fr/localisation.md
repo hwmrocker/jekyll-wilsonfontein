@@ -12,6 +12,9 @@ Situation générale
 La Namibie se trouve dans le sud du continent africain. Elle est bordée au nord par l’Angola, à l’est par le Botswana et au sud par l’Afrique du Sud. Wilsonfontein se trouve à vol d’oiseau à mi-chemin entre Windhoek et Swakopmund (Atlantique). L’altitude moyenne du territoire se trouve à 1200 m, ce qui confère un climat sec particulièrement sain. C’est d’ailleurs la raison pour laquelle il n’y a aucun risque de malaria. En hiver (juillet-août) les nuits peuvent être très fraîches.
 
 
+<div id="map" style="height: 480px;"></div>
+
+
 Comment vous rendre chez nous
 -----------------------------
 

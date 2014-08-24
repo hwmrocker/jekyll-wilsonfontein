@@ -11,6 +11,9 @@ General Location
 Namibia is in southern Africa and borderes to the north on Angola, to the east on Botswana, and to the south to the Republic of South Africa. Wilsonfontein distance is half way between Windhoek and Swakopmund (Atlantic). It is situated 1200 m above sea level and has a healthy dry climate. That is the reason that here is no malaria risk. In winter (July / August), it can be very cold at night.
 
 
+<div id="map" style="height: 480px;"></div>
+
+
 How to reach us by car
 --------------------------------------
 You can reach us from Windhoek via the B1 Okahandja, B2 Wilhelmstal to Karibib (180 km paved road) 76 km south from there to the C32 (gravel road), then another 10 km on the P1978 to the house.

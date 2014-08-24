@@ -306,5 +306,5 @@ def foo():
 cleanIt()
 createAllAlbumIndexHTMLPages()
 
-o = loadPhotoInfos()
-generatePhotoHTMLPages(o, True)
+# o = loadPhotoInfos()
+# generatePhotoHTMLPages(o, True)

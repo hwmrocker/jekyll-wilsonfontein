@@ -11,6 +11,9 @@ Lage allgemein
 Namibia liegt im südlichem Afrika und grenzt im Norden an Angola, im Osten an Botswana, und im Süden an Südafrika. Wilsonfontein liegt Luftlinie auf halben Weg zwischen Windhoek und Swakopmund (Atlantik). Es liegt 1200 m über dem Meeresspiegel und hat ein gesundes trockenes Klima. Dadurch besteht hier auch keine Malariagefahr. Im Winter (Juli/August) kann es nachts sehr kühl werden.
 
 
+<div id="map" style="height: 480px;"></div>
+
+
 So kommen Sie auf unsere Farm
 -----------------------------
 Sie erreichen uns von Windhoek aus über die B1 Okahandja, B2 Wilhelmstal nach Karibib (180 km Teerstraße) von dort aus südlich 76 km auf der C32 (Schotterstraße), dann noch mal 10 km auf der P1978 bis zum Haus.
