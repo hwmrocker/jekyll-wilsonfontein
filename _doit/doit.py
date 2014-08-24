@@ -110,7 +110,7 @@ p1: %(cat)s
     {%% assign post = pico[1] %%}
     {%% assign pid = post.pid %%}
     {%% assign album_path = '%(album_path)s' %%}
-    {%% if post.categories contains '%(cat_orig)s' %%}{%% include photo_thumb.html pid=pid album_path=album_path %%}{%% endif %%}
+    {%% if post.categories contains '%(cat_orig)s' %%}{%% include photo_thumb_lightbox.html pid=pid album_path=album_path %%}{%% endif %%}
 {%% endfor %%}"""
 
 extra_cat_templ = ""
@@ -140,6 +140,7 @@ def createAlbumIndexHTMLPage(lang, cat):
 def createAllAlbumIndexHTMLPages():
     for lang in lang2folders.keys():
         for cat in catlang.keys():
+            print("create {} for {}".format(cat, lang))
             createAlbumIndexHTMLPage(lang, cat)
         # createAlbumIndexHTMLPage(lang, None)
 
@@ -303,7 +304,7 @@ def foo():
     saveImagesInfos()
 
 
-cleanIt()
+# cleanIt()
 createAllAlbumIndexHTMLPages()
 
 # o = loadPhotoInfos()

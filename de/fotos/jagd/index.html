@@ -12,5 +12,5 @@ p1: jagd
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
     {% assign album_path = '/de/fotos/jagd/' %}
-    {% if post.categories contains 'hunting' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
+    {% if post.categories contains 'hunting' %}{% include photo_thumb_lightbox.html pid=pid album_path=album_path %}{% endif %}
 {% endfor %}

@@ -3,11 +3,16 @@
 {% assign title = pic.title_trans[page.lang] %}
 
 {% if title == "" or title == null %}
- {% assign title = pic.title %}
+	{% assign title = pic.title %}
 {% endif %}
 
+{% if url == "" or url == null %}
+	{% assign url = "{{ site.url }}/img/photos/{{ pic.url }}" %}
+{% else %}
+	{% assign url = include.url %}
+{% endif %}
 
 <div class="col-xs-4 col-md-2 image">
-    <a href="{{ site.url }}/img/photos/{{ pic.url }}">
+    <a href="{{ url }}">
     <img src="{{ site.url }}/img/thumbs/{{ pic.url }}" class="img-thumbnail center img-responsive" alt="{{ title }}" title="{{ title }}"/></a>
 </div>

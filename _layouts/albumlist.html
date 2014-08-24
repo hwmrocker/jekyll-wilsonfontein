@@ -15,7 +15,7 @@ more:
         <h2><a href="{{site.url}}{{album.path}}">{{album.name}}</a></h2>
         <div class="album-imgs preview">
             {% for pic in album.pics %}
-            {% include photo_thumb.html pid=pic.pid album_path=album.path %}
+            {% include photo_thumb.html pid=pic.pid album_path=album.path url=album.path %}
             {% endfor %}
         </div>
         <a href="{{site.url}}{{album.path}}">{{page.more[page.lang]}}</a>

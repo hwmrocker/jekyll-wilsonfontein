@@ -12,5 +12,5 @@ p1: alles
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
     {% assign album_path = '/de/fotos/alles/' %}
-    {% if post.categories contains 'all' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
+    {% if post.categories contains 'all' %}{% include photo_thumb_lightbox.html pid=pid album_path=album_path %}{% endif %}
 {% endfor %}

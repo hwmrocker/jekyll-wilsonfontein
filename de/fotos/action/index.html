@@ -7,10 +7,10 @@ h1: fotos
 p1: action
 ---
 {% assign o = site.tags.hideme[0] %}
-
+{% assign group = "action" %}
 {% for pico in o.pics %}
     {% assign post = pico[1] %}
     {% assign pid = post.pid %}
     {% assign album_path = '/de/fotos/action/' %}
-    {% if post.categories contains 'action' %}{% include photo_thumb.html pid=pid album_path=album_path %}{% endif %}
+    {% if post.categories contains 'action' %}{% include photo_thumb_lightbox.html pid=pid album_path=album_path %}{% endif %}
 {% endfor %}
