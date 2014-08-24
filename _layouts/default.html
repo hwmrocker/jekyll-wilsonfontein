@@ -1,7 +1,9 @@
 ---
 langs: ['en', 'de', 'fr']
-navbar-permanent:
+navbar-permanent: foo
+navbar:
   home:
+    permanent: true
     de:
         url: /de/index.html
         name: Home
@@ -12,6 +14,7 @@ navbar-permanent:
         url: /fr/index.html
         name: Home
   location:
+    permanent: true
     de:
         url: /de/lage.html
         name: Lage
@@ -22,6 +25,7 @@ navbar-permanent:
         url: /fr/localisation.html
         name: Localisation
   hunting:
+    permanent: true
     de:
         url: /de/jagd.html
         name: Jagd
@@ -32,6 +36,7 @@ navbar-permanent:
         url: /fr/chasse.html
         name: Chasse
   recreation:
+    permanent: true
     de:
         url: /de/erholung.html
         name: Erholung
@@ -41,8 +46,8 @@ navbar-permanent:
     fr:
         url: /fr/detente.html
         name: Détente
-navbar:
   photos:
+    permanent: false
     de:
         url: /de/fotos/
         name: Fotos
@@ -53,6 +58,7 @@ navbar:
         url: /fr/photos/
         name: Photos
   price:
+    permanent: false
     de:
         url: /de/preise.html
         name: Preise
@@ -63,6 +69,7 @@ navbar:
         url: /fr/tarifs.html
         name: Tarifs
   contact:
+    permanent: false
     de:
         url: /de/kontakt.html
         name: Kontakt
@@ -73,6 +80,7 @@ navbar:
         url: /fr/contact.html
         name: Contact
   dedication:
+    permanent: false
     de:
         url: /de/widmung.html
         name: Widmung
@@ -166,8 +174,11 @@ footer:
         </div>
         <div class="navbar-header">
           <ul class="nav navbar-nav">
-            {% for navitem in page.navbar-permanent %}
+            {% for navitem in page.navbar %}
+            <!-- {{navitem[1].permanent}} -->
+            {% if navitem[1].permanent == true %}
               <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
+            {% endif %}
             {% endfor %}
           </ul>
         </div>
@@ -179,13 +190,15 @@ footer:
             <li><a href="#contact">Contact</a></li> -->
             
             {% for navitem in page.navbar %}
+            {% if navitem[1].permanent == false %}
               <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
+            {% endif %}
             {% endfor %}
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{page.lang}} <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 {% for lang in page.langs %}
-                  <li><a href="{{ site.url }}{{ page.navbar[page.navname][lang].url }}" class="{{ lang }}">{{ lang }}</a></li>
+                  <li><a href="{{ site.url }}{{ page.navbar[page.navname][lang].url }}" datafoo='{{navitem[0]}}:{{navitem[1]}}|:|{{navitem}}' class="{{ lang }}">{{ lang }}</a></li>
                 {% endfor %}
               </ul>
             </li>
