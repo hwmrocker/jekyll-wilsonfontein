@@ -1,4 +1,4 @@
-#encoding: utf-8
+# encoding: utf-8
 import yaml
 import codecs
 from datetime import datetime, timedelta
@@ -6,6 +6,8 @@ import os
 
 #############################################################
 # Helper functions
+
+
 def some(pred, coll):
     for elem in coll:
         if pred(elem):
@@ -15,6 +17,8 @@ def some(pred, coll):
 
 IN = '../_posts/2013-03-05-photos.md'
 OUT = IN + '.new'
+
+
 def loadPhotoInfos():
     yaml_context = []
     end = []
@@ -37,9 +41,9 @@ def loadPhotoInfos():
 # Translations
 
 lang2folders = {
-    'de':'de/fotos',
-    'en':'en/photos',
-    'fr':'fr/photos'
+    'de': 'de/fotos',
+    'en': 'en/photos',
+    'fr': 'fr/photos'
 }
 preview = {
     'de': 'Übersicht',
@@ -47,46 +51,46 @@ preview = {
     'fr': "avant-première"
 }
 catlang = {
-    "action":{
-        "de":u"action",
-        "en":u"action",
-        "fr":u"action"
+    "action": {
+        "de": u"action",
+        "en": u"action",
+        "fr": u"action"
     },
-    "animals":{
-        "de":u"tiere",
-        "en":u"animals",
-        "fr":u"animaux"
+    "animals": {
+        "de": u"tiere",
+        "en": u"animals",
+        "fr": u"animaux"
     },
-    "hunting":{
-        "de":u"jagd",
-        "en":u"hunting",
-        "fr":u"chasse"
+    "hunting": {
+        "de": u"jagd",
+        "en": u"hunting",
+        "fr": u"chasse"
     },
-    "landscape":{
-        "de":u"landschaft",
-        "en":u"landscape",
-        "fr":u"paysage"
+    "landscape": {
+        "de": u"landschaft",
+        "en": u"landscape",
+        "fr": u"paysage"
     },
-    "plants":{
-        "de":u"pflanzen",
-        "en":u"plants",
-        "fr":u"plantes"
+    "plants": {
+        "de": u"pflanzen",
+        "en": u"plants",
+        "fr": u"plantes"
     },
-    "recreation":{
-        "de":u"erholung",
-        "en":u"recreation",
-        "fr":u"recreation",
+    "recreation": {
+        "de": u"erholung",
+        "en": u"recreation",
+        "fr": u"recreation",
         # "fr":u"récréation"
     },
-    "spycam":{
-        "de":u"fotofalle",
-        "en":u"spycam",
-        "fr":u"spycam"
+    "spycam": {
+        "de": u"fotofalle",
+        "en": u"spycam",
+        "fr": u"spycam"
     },
-    "all":{
-        "de":"alles",
-        "en":"all",
-        "fr":"tous"
+    "all": {
+        "de": "alles",
+        "en": "all",
+        "fr": "tous"
     }
 }
 #############################################################
@@ -110,13 +114,15 @@ p1: %(cat)s
 {%% endfor %%}"""
 
 extra_cat_templ = ""
+
+
 def createAlbumIndexHTMLPage(lang, cat):
     assert cat is not None
     cat_orig, cat = cat, catlang[cat][lang]
 
     path = "../%s/%s/" % (lang2folders[lang], cat)
 
-    formatd ={
+    formatd = {
         "lang": lang,
         "cat_comma": ", %s" % cat if cat is not None else "",
         "cat": cat,
@@ -129,6 +135,7 @@ def createAlbumIndexHTMLPage(lang, cat):
     os.system("mkdir -p %s" % path)
     with open("%sindex.html" % path, "w") as fh:
         fh.write(final_txt)
+
 
 def createAllAlbumIndexHTMLPages():
     for lang in lang2folders.keys():
@@ -172,32 +179,34 @@ def createAllAlbumIndexHTMLPages():
 #         date += timedelta(days=1)
 
 
-
-
 def genfn(pic, cat=None):
     return pic["pid"]
-    return "%s-%s" % (pic["date"],pic["pid"])
+    return "%s-%s" % (pic["date"], pic["pid"])
+
+
 def genlnk(pic, cat=None, folder=None):
-    return "/%s/%s/%s.html"%(folder,cat,pic["pid"])
-    return "/%s/%s/%s%s.html"%(folder,cat,("%s-"%cat) if cat is not None else "",pic["pid"])
+    return "/%s/%s/%s.html" % (folder, cat, pic["pid"])
+    return "/%s/%s/%s%s.html" % (folder, cat, ("%s-" % cat) if cat is not None else "", pic["pid"])
 
 
 def generatePhotoHTMLPages(o, create_img=True):
     photoindex = []
     for cat in catlang.keys():
-        catlist=[p for p in sorted(o["pics"].itervalues(), reverse=True) if (cat in p.get("categories",[]) or cat is None)]
+        catlist = [p for p in sorted(o["pics"].itervalues(), reverse=True) if (
+            cat in p.get("categories", []) or cat is None)]
         photoindex.append((cat, catlist[:6]))
         for idx, pic in enumerate(catlist):
-            prev = catlist[idx-1] if idx > 0 else None
-            next = catlist[idx+1] if (idx+1) < len(catlist) else None
+            prev = catlist[idx - 1] if idx > 0 else None
+            next = catlist[idx + 1] if (idx + 1) < len(catlist) else None
             if create_img:
                 saveImageHTML(pic, cat, next, prev)
     saveImageHTMLIndex(photoindex)
 
+
 def saveImageHTMLIndex(photoindex):
     # print "saveImageHTMLIndex", photoindex
     for lang, folder in lang2folders.iteritems():
-        nd ={
+        nd = {
             "albums": [],
             "categories": [lang, folder.split("/")[0], ],
             "lang": lang,
@@ -208,34 +217,35 @@ def saveImageHTMLIndex(photoindex):
         for cat, prev_images in photoindex:
             cat_trans = catlang[cat][lang]
             _prev_images = [p.copy() for p in prev_images]
-            
-            nd["albums"].append(dict(name=cat_trans.title(), pics=_prev_images, path="/%s/%s/"%(folder,cat_trans)))
+
+            nd["albums"].append(dict(name=cat_trans.title(), pics=_prev_images, path="/%s/%s/" % (folder, cat_trans)))
             # TDOD generate index
         _folder = "../%s" % folder
         os.system("mkdir -p %s" % _folder)
         print folder
-        with codecs.open(_folder+'/index.html', 'w', encoding="utf-8") as outfh:
+        with codecs.open(_folder + '/index.html', 'w', encoding="utf-8") as outfh:
             outfh.write("---\n")
             outfh.write(yaml.safe_dump(nd))
             outfh.write("---\n")
+
 
 def saveImageHTML(pic, cat, next=None, prev=None):
     for lang, folder in lang2folders.iteritems():
         cat_trans = catlang[cat][lang]
         cats = folder.split('/') + [cat_trans]
         nd = {
-            'lang':lang,
-            'layout':'photo',
-            'picname':pic["pid"],
-            'categories':cats,
-            'tags':pic["tags"][:],
-            'next_photo':genlnk(next,cat_trans,folder) if next is not None else None,
-            'prev_photo':genlnk(prev,cat_trans,folder) if prev is not None else None
+            'lang': lang,
+            'layout': 'photo',
+            'picname': pic["pid"],
+            'categories': cats,
+            'tags': pic["tags"][:],
+            'next_photo': genlnk(next, cat_trans, folder) if next is not None else None,
+            'prev_photo': genlnk(prev, cat_trans, folder) if prev is not None else None
         }
 
         _folder = "../%s/%s" % (folder, cat_trans)
-        os.system("mkdir -p %s" %_folder)
-        with codecs.open(_folder+'/%s.md'%genfn(pic, cat_trans), 'w', encoding="utf-8") as outfh:
+        os.system("mkdir -p %s" % _folder)
+        with codecs.open(_folder + '/%s.md' % genfn(pic, cat_trans), 'w', encoding="utf-8") as outfh:
             outfh.write("---\n")
             outfh.write(yaml.safe_dump(nd))
             outfh.write("---\n")
@@ -248,7 +258,6 @@ def cleanIt():
         os.system("rm -rf ../%s" % folder)
 
 
-
 def _get_categories(*tags):
     "return categories from tags"
     cats = []
@@ -256,9 +265,9 @@ def _get_categories(*tags):
         cats.append("hunting")
     if some(lambda x: x in ('Album Action', 'offroad action', 'dune riding', 'dune'), tags):
         cats.append("action")
-    if not some(lambda x: x in ( 'dead animal', 'painting' ), tags) and "animal" in tags:
+    if not some(lambda x: x in ('dead animal', 'painting'), tags) and "animal" in tags:
         cats.append("animals")
-    if not some(lambda x: x in ( 'dead animal', 'painting' ), tags) and "animal" in tags:
+    if not some(lambda x: x in ('dead animal', 'painting'), tags) and "animal" in tags:
         cats.append("landscape")
 
 
@@ -269,14 +278,16 @@ def saveImagesInfos(o):
         outfh.write("---\n")
         # outfh.write("".join(end))
 
+
 def addCategory(cat, titles, o):
     "???"
     for key in o['pics'].keys():
         if o['pics'][key]['title'] in titles:
             if 'categories' not in o['pics'][key]:
-                o['pics'][key]['categories']=[]
+                o['pics'][key]['categories'] = []
             if cat not in o['pics'][key]['categories']:
                 o['pics'][key]['categories'].append(cat)
+
 
 def foo():
     import re
@@ -284,10 +295,10 @@ def foo():
     titles = re.compile(r'"title": "([^"]+)"')
 
     for x in ("action", "animals", "hunting", "landscape", "plants", "recreation", "spycam"):
-        with open("done/%s.jl"%x) as fh:
+        with open("done/%s.jl" % x) as fh:
             txt = fh.read()
             tits = titles.findall(txt)
-            addCategory(x,tits)
+            addCategory(x, tits)
 
     saveImagesInfos()
 
