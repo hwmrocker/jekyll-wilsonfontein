@@ -111,10 +111,14 @@ navbar:
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Olaf Gladis">
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>{% if page.title %} {{ page.title }} {% else %}
+        {% if page.lang == "de" %}Wilsonfontein - Jagd Safaris in Namibia / Afrika {% endif %}
+        {% if page.lang == "en" %}Wilsonfontein - Hunting Safaris in Namibia / Africa {% endif %}
+        {% if page.lang == "fr" %}Wilsonfontein - Hunting Safaris en Namibie / Afrique {% endif %}
+    {% endif %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -196,8 +200,10 @@ navbar:
     <div id="footer">
       <div class="container">
         <p class="text-muted">
-          {% for navitem in page.footer %}
+          {% for navitem in page.navbar %}
+          {% if navitem[1].permanent == "footer" %}
             <a href="{{site.url}}{{navitem[1][page.lang].url}}" class="footerlink{% if navitem[0] == page.navname %} active{% endif %}">{{navitem[1][page.lang].name}}</a>
+          {% endif %}
           {% endfor %}
           <span class="pull-right">&copy; Olaf 2014</span>
         </p>
