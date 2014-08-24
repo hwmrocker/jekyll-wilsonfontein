@@ -137,30 +137,6 @@ footer:
 
   <body>
 
-    <!-- Fixed navbar -->
-<!--     <div class="navbar navbar-inverse bs-docs-nav">
-      <div class="container">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"></button>
-        <div class="nav-collapse collapse bs-navbar-collapse">
-          <ul class="nav navbar-nav">
-            {% for navitem in page.navbar %}
-              <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
-            {% endfor %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"> {{page.lang}} <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                {% for lang in page.langs %}
-                  <li><a href="{{ site.url }}{{ page.navbar[page.navname][lang].url }}">{{ lang }}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <ul class="nav navbar-nav ">
-        </ul>
-      </div>
-    </div> -->
-
     <div class="navbar navbar-default " role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -207,20 +183,13 @@ footer:
       </div>
     </div>
 
-<!--     <div class="row">
-        <div class="col-12 col-lg-8 col-offset-2">
-        </div>
-    </div> -->
-
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
         <h1>{{ page.h1 | capitalize}}{% if page.p1 %} <small>{{ page.p1 | capitalize}}</small>{% endif %}</h1>
-        <!-- <h1>Sticky footer with fixed navbar</h1> -->
       </div>
       {{ content | markdownify }}
-      <!-- <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p> -->
-      <!-- <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p> -->
+
     </div>
     <!-- End page content -->
     <div id="footer">
