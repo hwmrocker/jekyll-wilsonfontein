@@ -154,9 +154,13 @@ navbar:
           <!-- <a class="navbar-brand" href="#">Project name</a> -->
         </div>
         <div class="navbar-header">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <img src="/img/leo.svg">
+          </div>
+        </div>
           <ul class="nav navbar-nav">
             {% for navitem in page.navbar %}
-            <!-- {{navitem[1].permanent}} -->
             {% if navitem[1].permanent == true %}
               <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
             {% endif %}
@@ -166,10 +170,6 @@ navbar:
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li> -->
-            
             {% for navitem in page.navbar %}
             {% if navitem[1].permanent == false %}
               <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
