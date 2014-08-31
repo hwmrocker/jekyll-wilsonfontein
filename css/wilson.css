@@ -345,8 +345,6 @@ h2.title a:hover {
 }
 
 .logo-wrapper .logo {
-	transition-delay: 0.1s;
-	transition-duration: 0.5s;
 	position: absolute;
 	top: 0;
 	background-color: #f5f5f5;
@@ -360,17 +358,7 @@ h2.title a:hover {
 }
 
 .logo-wrapper .logo img {
-	transition-delay: 0.1s;
-	transition-duration: 0.5s;
 	height: 75px;
-}
-
-.logo-wrapper .logo:hover {
-	border-radius: 75px;
-}
-
-.logo-wrapper .logo:hover img {
-	height: 150px;
 }
 
 .full-logo {
