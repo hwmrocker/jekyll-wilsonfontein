@@ -6,10 +6,10 @@
  {% assign title = pic.title %}
 {% endif %}
 
-<div class="col-12 image">
+<div class="image">
     <img src="{{ site.url }}/img/photos/{{ pic.url }}" class="img-thumbnail  center img-responsive"/><br>
 </div>
-<div class="col-10 col-offset-1 col-lg-6 col-lg-offset-3 image-caption">
+<div class="col-lg-6 col-lg-offset-3 image-caption">
     <span class="photographer">© {{ pic.author}}</span> -
     <span class="title">{{ title }}</span>
     {% if include.param2 %}<p>{{ include.param2 }}</p>{% endif %}
