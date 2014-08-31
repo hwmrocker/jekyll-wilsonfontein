@@ -386,8 +386,6 @@ h2.title a:hover {
 }
 .logo-de {
 	background-image: url('/img/de.svg');
-	background-size: contain;
-	background-repeat: repeat-x;
 }
 .logo-en {
 	background-image: url('/img/en.svg');
