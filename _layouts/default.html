@@ -141,7 +141,8 @@ navbar:
   </head>
 
   <body>
-
+    {% if page.hide_navbar %}
+    {% else %}
     <div class="navbar navbar-default " role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -187,6 +188,7 @@ navbar:
         </div>
       </div>
     </div>
+    {% endif %}
 
     <!-- Begin page content -->
     <div class="container">

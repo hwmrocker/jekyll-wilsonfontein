@@ -369,3 +369,35 @@ h2.title a:hover {
 .logo-wrapper .logo:hover img {
 	height: 150px;
 }
+
+.full-logo {
+	height: 50%;
+}
+
+.logo-de, .logo-en, .logo-fr {
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin-top: 2em;
+}
+.logo-de {
+	background-image: url('/img/de.svg');
+	background-size: contain;
+	background-repeat: repeat-x;
+}
+.logo-en {
+	background-image: url('/img/en.svg');
+}
+.logo-fr {
+	background-image: url('/img/fr.svg');
+}
+
+.logo-de a, .logo-en a, .logo-fr a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding-top: 90px;
+	font-size: 200%;
+	font-weight: 900;
+}
