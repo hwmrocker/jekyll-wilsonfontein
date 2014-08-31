@@ -160,7 +160,7 @@ navbar:
             <img src="/img/leo.svg">
           </div>
         </div>
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav push_logo">
             {% for navitem in page.navbar %}
             {% if navitem[1].permanent == true %}
               <li {% if navitem[0] == page.navname %}class="active"{% endif %}><a href="{{site.url}}{{navitem[1][page.lang].url}}">{{navitem[1][page.lang].name}}</a></li>
@@ -169,7 +169,7 @@ navbar:
           </ul>
         </div>
 
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse push_logo">
           <ul class="nav navbar-nav">
             {% for navitem in page.navbar %}
             {% if navitem[1].permanent == false %}
