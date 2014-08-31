@@ -13,16 +13,16 @@
  {% assign title2 = pic2.title %}
 {% endif %}
 <div class="container">
-    <div class="col-xs-12 col-md-6 image">
+    <div class="col-md-6 image">
         <img src="{{ site.url }}/img/bigthumbs/{{ pic.url }}" class="img-thumbnail  center img-responsive"/>
-        <div class="col-md-10 image-caption">
+        <div class="col-md-10 col-md-offset-1 image-caption">
             <span class="photographer">© {{ pic.author }}</span> -
             <span class="title">{{ title }}</span>
         </div>
     </div>
-    <div class="col-xs-12 col-md-6 image">
+    <div class="col-md-6 image">
         <img src="{{ site.url }}/img/bigthumbs/{{ pic2.url }}" class="img-thumbnail  center img-responsive"/>
-        <div class="col-md-10 image-caption">
+        <div class="col-md-10 col-md-offset-1 image-caption">
             <span class="photographer">© {{ pic2.author }}</span> -
             <span class="title">{{ title2 }}</span>
         </div>
