@@ -371,6 +371,11 @@ h2.title a:hover {
 	background-repeat: no-repeat;
 	background-position: 50%;
 	margin-top: 2em;
+	margin-bottom: 2em;
+	float: left;
+	width: 30%;
+	margin-left: 1.6666665%;
+	margin-right: 1.6666665%;
 }
 .logo-de {
 	background-image: url('/img/de.svg');
