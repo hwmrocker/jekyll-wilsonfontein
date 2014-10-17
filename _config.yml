@@ -1,2 +1,6 @@
 permalink: /:categories/:title.html
 urlo: http://wilsonfontein.de
+markdown: redcarpet
+
+redcarpet:
+  extensions: [tables]

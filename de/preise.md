@@ -39,12 +39,14 @@ Bekannt wegen der großen Springböcke (bis 45 cm) und der einmaligen Landschaft
 -->
 
 ####Trophäen Eigenjagd (Preise auf Anfrage):
-|Bärenpavian|Springbock|
-|Keiler|Strauß|
-|Kudu|Steinböckchen |
-|Klippspringer|Schakal|
-|Lux|Wildkatze  |
-|Oryx|Bergzebra |
+|                   |                   |
+|-------------------|-------------------|
+| Bärenpavian       | Springbock        |
+| Keiler            | Strauß            |
+| Kudu              | Steinböckchen     |
+| Klippspringer     | Schakal           |
+| Lux               | Wildkatze         |
+| Oryx              | Bergzebra         |
 
 
 ####Trophäen Konzessionsjagd möglich:
