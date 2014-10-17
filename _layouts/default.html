@@ -193,7 +193,7 @@ navbar:
     <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
-        <h1>{{ page.h1 | capitalize}}{% if page.p1 %} <small>{{ page.p1 | capitalize}}</small>{% endif %}</h1>
+        <h1>{{ page.h1 }}{% if page.p1 %} <small>{{ page.p1 }}</small>{% endif %}</h1>
       </div>
       {{ content | markdownify }}
 
