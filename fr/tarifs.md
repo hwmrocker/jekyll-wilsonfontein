@@ -44,12 +44,14 @@ Nous n’accueillons au maximum que 4 chasseurs à la fois.
 -->
 
 #### Taxes d’abattage sur notre propre territoire, sur demande :
-|Baboon (Chacma)|Springbuck|
-|Warthog|Ostrich|
-|Kudu|Stein bock|
-|Klippspringer|Jackal / Black backed|
-|Caracal|African Wildcat|
-|Oryx|Mountain zebra|
+|                   |                       |
+|-------------------|-----------------------|
+| Baboon    (Chacma)|Springbuck             |
+| Warthog           |Ostrich                |
+| Kudu              |Stein bock             |
+| Klippspringer     |Jackal / Black backed  |
+| Caracal           |African Wildcat        |
+| Oryx              |Mountain zebra         |
 
 Chaque chasseur peut prélever deux animaux par espèce
 chassable.<br />

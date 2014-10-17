@@ -43,12 +43,14 @@ Maximum four hunters.
 -->
 
 ####Trophy fees on request:
-|Baboon (Chacma)|Springbuck|
-|Warthog|Ostrich|
-|Kudu|Stein bock|
-|Klippspringer|Jackal / Black backed|
-|Caracal|African Wildcat|
-|Oryx|Mountain zebra|
+|                   |                       |
+|-------------------|-----------------------|
+| Baboon (Chacma)   | Springbuck            |
+| Warthog           | Ostrich               |
+| Kudu              | Stein bock            |
+| Klippspringer     | Jackal / Black backed |
+| Caracal           | African Wildcat       |
+| Oryx              | Mountain zebra        |
 
 Preferably bring your own rifles.<br />
 Wounded animals if not found after thorough search, are to be paid in full.<br />
