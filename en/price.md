@@ -20,7 +20,6 @@ You will be far from the madding crowd and will experience an unforgettable dese
 ####Accommodation / Services:
 
 Two two-bedrooms with shower and WC<br />
-Two two-bedrooms with shared shower and WC<br />
 
 Full board and soft drinks during safari. Laundry of clothing.<br />
 No electricity, only paraffin and gas lamps.<br />

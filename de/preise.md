@@ -17,7 +17,6 @@ Bekannt wegen der großen Springböcke (bis 45 cm) und der einmaligen Landschaft
 ####Unterbringung / Dienstleistung:
 
 - Zwei Zweibettzimmer mit Dusche und WC 
-- Zwei Zweibettzimmer mit Gemeinschaftsdusche und WC 
 - Vollverpflegung, inkl. nicht alkoholische Getränke
 - Wäschedienst
 - Kein Strom vorhanden (nur Öl und Gaslampen)
@@ -49,7 +48,7 @@ Bekannt wegen der großen Springböcke (bis 45 cm) und der einmaligen Landschaft
 | Oryx              | Bergzebra         |
 
 
-####Trophäen Konzessionsjagd möglich:
+Trophäen Konzessionsjagd möglich.
 
 Jeder Jäger kann zwei Trophäen jeder Wildart erlegen. Angeschweißtes und trotz gewissenhafter Nachsuche nicht gefundenes Wild gilt als Abschuss. Leihwaffen sind vorhanden. Selbstfahrer benötigen einen Internationalen Führerschein.
 Nicht eingeschlossen sind Hin- und Rückflug, Flughafensteuer, Trinkgelder, Hotelunterkunft bei An- und Abreise, Verpackung, Versicherung und Versand der Trophäen.

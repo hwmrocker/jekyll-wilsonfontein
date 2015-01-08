@@ -21,7 +21,6 @@ Nos grands springbocks (jusqu’à 45 cm) et les paysages uniques font notre ré
 
 Deux chambres doubles avec douche et WC privatifs
 
-Deux chambres doubles avec douche et WC communs
 
 Pension complète, hors boissons alcoolisées. Blanchisserie.<br />
 Pas d’électricité. Eclairage uniquement à base de lampes à pétrole et à gaz.<br />
